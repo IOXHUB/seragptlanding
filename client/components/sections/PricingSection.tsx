@@ -62,13 +62,13 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="py-20 bg-background-muted">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+    <section className="py-12 sm:py-16 md:py-20 bg-background-muted">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-3 sm:mb-4 px-2">
             Fiyatlandırma
           </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-text-secondary max-w-2xl mx-auto mb-6 sm:mb-8 px-4 sm:px-0">
             İhtiyacınıza uygun planı seçin. İstediğiniz zaman yükseltebilir veya
             iptal edebilirsiniz.
           </p>
