@@ -339,7 +339,7 @@ export default function Index() {
                   display: "inline-block",
                 }}
               >
-                Danışmanlık Talep Et
+                Danışmanl��k Talep Et
               </Link>
             </div>
 
@@ -359,24 +359,26 @@ export default function Index() {
                 margin: "0 auto",
               }}
             >
-              <p
-                style={{
-                  color: "#6B7280",
-                  fontSize: "12px",
-                  marginBottom: "6px",
-                }}
-              >
-                Çözüm ortakları: ININSA, HBAGRO, HERMISAN, ISITMAX
-              </p>
               <h3
                 style={{
                   fontSize: "22px",
                   fontWeight: "700",
-                  marginBottom: "10px",
+                  margin: "0 0 10px 1px",
                 }}
               >
                 Anahtar Teslim Sera
               </h3>
+              <p
+                style={{
+                  color: "#374151",
+                  fontSize: "14px",
+                  marginBottom: "12px",
+                }}
+              >
+                <p>
+                  Çözüm ortaklarımız: ININSA, HBAGRO, HERMISAN, ISITMAX
+                </p>
+              </p>
               <ul
                 style={{
                   color: "#374151",
@@ -748,7 +750,7 @@ export default function Index() {
               marginBottom: "16px",
             }}
           >
-            Sera Verimliliğinizi Artırmaya Hazır mısınız?
+            <p>Projenizi Bugün Başlatın</p>
           </h2>
           <p
             style={{
@@ -757,7 +759,10 @@ export default function Index() {
               marginBottom: "32px",
             }}
           >
-            Ücretsiz analiz ile başlayın, farkı hemen görün.
+            <p>
+              Ücretsiz analiz ve tarımsal zeka kullanımı ile tarımsal
+              asistanınızı bugün keşfedin.{" "}
+            </p>
           </p>
           <div
             style={{
@@ -815,78 +820,6 @@ export default function Index() {
         Verileriniz gizli tutulur. KVKK/GDPR uyumlu süreçler.
       </div>
 
-      {/* Footer */}
-      <footer
-        style={{
-          marginTop: "64px",
-          borderTop: "1px solid #E5E7EB",
-          backgroundColor: "#FFFFFF",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "600px",
-            margin: "0 auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            padding: "24px 16px",
-            flexWrap: "wrap",
-            gap: "12px",
-          }}
-          className="flex-col sm:flex-row"
-        >
-          <div style={{ fontWeight: "700" }}>SeraGPT © 2025</div>
-          <div
-            style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}
-            className="text-sm"
-          >
-            <Link
-              to="/hakkimizda"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Hakkımızda
-            </Link>
-            <Link
-              to="/moduller"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Modüller
-            </Link>
-            <Link
-              to="/danismanlik"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Danışmanlık
-            </Link>
-            <Link
-              to="/anahtar-teslim-sera"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Anahtar Teslim
-            </Link>
-            <Link
-              to="/destek"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Destek
-            </Link>
-            <Link
-              to="/blog"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              Blog
-            </Link>
-            <Link
-              to="/iletisim"
-              style={{ color: "#374151", textDecoration: "none" }}
-            >
-              İletişim
-            </Link>
-            <span style={{ color: "#374151" }}>TR / EN / DE / RU</span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
