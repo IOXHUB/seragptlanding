@@ -91,20 +91,20 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Features Section - LibreChat Card Style */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
+      {/* Features Section - Mobile First */}
+      <section className="py-12 sm:py-16 md:py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-3 sm:mb-4 px-2">
               {t("home.featuresTitle")}
             </h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-text-secondary max-w-2xl mx-auto px-4 sm:px-0">
               Sera tarımcılığında yenilikçi çözümler sunan teknoloji ve
               deneyimimizle yanınızdayız.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Feature 1 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
