@@ -145,7 +145,7 @@ export default function Index() {
             >
               Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım
               planlaması ve gecikmi�� aksiyonlardan kaynaklanır. SeraGPT; 20+
-              teknik analiz, global veri servisleri ve tarımsal yapay zekâ
+              teknik analiz, global veri servisleri ve tar��msal yapay zekâ
               destekli kurumsal raporlar sunar.
             </p>
           </div>
@@ -398,7 +398,10 @@ export default function Index() {
                   listStyle: "none",
                   padding: 0,
                   textAlign: "left",
-                  display: "inline-block",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <li style={{ marginBottom: "4px" }}>
