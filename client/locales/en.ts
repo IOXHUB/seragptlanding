@@ -88,4 +88,14 @@ export const en = {
       backHome: "Back to Home",
     },
   },
+
+  // Blog
+  blog: {
+    cta: {
+      title: "Improve Your Greenhouse Technology with SeraGPT",
+      subtitle: "Increase your efficiency with our AI-powered greenhouse solutions.",
+      consultingButton: "Get Free Consultation",
+      blogButton: "Other Articles",
+    },
+  },
 };
