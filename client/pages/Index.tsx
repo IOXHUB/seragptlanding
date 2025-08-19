@@ -388,6 +388,9 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <PricingSection />
+
       {/* CTA Section */}
       <section className="section-padding bg-button-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
