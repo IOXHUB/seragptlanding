@@ -26,7 +26,7 @@ export default function Index() {
                   to={`/${language}/proje-danismanligi`}
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-button-bg text-button-foreground text-sm sm:text-base font-semibold rounded-lg hover:bg-button-bg-hover transition-all duration-200 shadow-sm"
                 >
-                  Ücretsiz Başla
+                  <p>Ücretsiz Analiz Başlat</p>
                 </Link>
                 <a
                   href="https://chat.seragpt.com"
@@ -34,7 +34,7 @@ export default function Index() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-transparent text-text-primary text-sm sm:text-base font-semibold rounded-lg border border-border hover:bg-background-muted transition-all duration-200"
                 >
-                  Canlı Demo
+                  <p>Nasıl Yapıyoruz? </p>
                 </a>
               </div>
             </div>
