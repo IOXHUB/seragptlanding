@@ -7,29 +7,71 @@ export default function Index() {
   const { language } = useLanguage();
   return (
     <div>
-      {/* Hero Section */}
-      <section className="section-padding bg-background">
+      {/* Hero Section - LibreChat Style */}
+      <section className="py-20 lg:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-text-primary mb-6 leading-tight">
-              {t('home.heroTitle')}
-            </h1>
-            <p className="text-lg sm:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
-              {t('home.heroSubtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to={`/${language}/proje-danismanligi`}
-                className="inline-flex items-center justify-center px-8 py-3 bg-button-bg text-button-foreground text-base font-medium rounded-lg hover:bg-button-bg-hover transition-colors"
-              >
-                {t('home.heroButton')}
-              </Link>
-              <Link
-                to={`/${language}/anahtar-teslim-sera`}
-                className="inline-flex items-center justify-center px-8 py-3 bg-transparent text-text-primary text-base font-medium rounded-lg border border-border hover:bg-background-muted transition-colors"
-              >
-                {t('home.ctaButton')}
-              </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight max-w-[800px]">
+                {t('home.heroTitle')}
+              </h1>
+              <p className="text-lg sm:text-xl text-text-secondary mb-8 leading-relaxed max-w-[600px]">
+                {t('home.heroSubtitle')}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                  to={`/${language}/proje-danismanligi`}
+                  className="inline-flex items-center justify-center px-8 py-4 bg-button-bg text-button-foreground text-base font-semibold rounded-lg hover:bg-button-bg-hover transition-all duration-200 shadow-sm"
+                >
+                  Ücretsiz Başla
+                </Link>
+                <a
+                  href="https://chat.seragpt.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent text-text-primary text-base font-semibold rounded-lg border border-border hover:bg-background-muted transition-all duration-200"
+                >
+                  Canlı Demo
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Visual/Mockup */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-md lg:max-w-lg">
+                {/* Minimal Device Mockup */}
+                <div className="bg-background-muted rounded-2xl p-6 shadow-lg border border-border">
+                  {/* Mock browser header */}
+                  <div className="flex items-center gap-2 mb-4 pb-4 border-b border-border">
+                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                    <div className="ml-4 text-xs text-text-secondary font-mono">chat.seragpt.com</div>
+                  </div>
+
+                  {/* Mock chat interface */}
+                  <div className="space-y-3">
+                    <div className="bg-background rounded-lg p-3 text-sm text-text-secondary">
+                      Sera sıcaklığım 28°C, nem %75. Öneriniz nedir?
+                    </div>
+                    <div className="bg-button-bg text-button-foreground rounded-lg p-3 text-sm ml-8">
+                      Sera koşullarınız optimum seviyede! İdeal sıcaklık aralığındasınız. Havalandırmayı artırarak nem seviyesini %65-70 arasına düşürmenizi öneririm.
+                    </div>
+                    <div className="bg-background rounded-lg p-3 text-sm text-text-secondary">
+                      Teşekkürler! Sulama programı için öneriniz var mı?
+                    </div>
+                    <div className="bg-button-bg/10 rounded-lg p-2 flex items-center text-sm text-text-secondary">
+                      <div className="w-2 h-2 bg-button-bg rounded-full animate-pulse mr-2"></div>
+                      SeraGPT yazıyor...
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating elements */}
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-green-400 rounded-full opacity-20 animate-pulse"></div>
+                <div className="absolute -bottom-6 -right-6 w-12 h-12 bg-blue-400 rounded-full opacity-10 animate-pulse delay-1000"></div>
+              </div>
             </div>
           </div>
         </div>
