@@ -101,39 +101,38 @@ export function Layout({ children }: LayoutProps) {
                 />
               </Link>
               <p className="text-text-secondary text-sm leading-relaxed">
-                Yapay zeka destekli sera teknolojileri ve danışmanlık hizmetleri
-                ile tarımsal verimliliğinizi artırın.
+                {t('footer.description')}
               </p>
             </div>
 
             {/* Services */}
             <div>
               <h3 className="text-sm font-semibold text-text-primary mb-4">
-                Hizmetlerimiz
+                {t('footer.services')}
               </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
-                    to="/proje-danismanligi"
+                    to={`/${language}/proje-danismanligi`}
                     className="text-sm text-text-secondary hover:text-link-hover"
                   >
-                    Proje Danışmanlığı
+                    {t('footer.consulting')}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/anahtar-teslim-sera"
+                    to={`/${language}/anahtar-teslim-sera`}
                     className="text-sm text-text-secondary hover:text-link-hover"
                   >
-                    Anahtar Teslim Sera
+                    {t('footer.turnkey')}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/destek"
+                    to={`/${language}/destek`}
                     className="text-sm text-text-secondary hover:text-link-hover"
                   >
-                    Teknik Destek
+                    {t('footer.support')}
                   </Link>
                 </li>
               </ul>
@@ -142,23 +141,23 @@ export function Layout({ children }: LayoutProps) {
             {/* Resources */}
             <div>
               <h3 className="text-sm font-semibold text-text-primary mb-4">
-                Kaynaklar
+                {t('footer.resources')}
               </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
-                    to="/blog"
+                    to={`/${language}/blog`}
                     className="text-sm text-text-secondary hover:text-link-hover"
                   >
-                    Blog
+                    {t('footer.blog')}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/destek"
+                    to={`/${language}/destek`}
                     className="text-sm text-text-secondary hover:text-link-hover"
                   >
-                    Destek Merkezi
+                    {t('footer.supportCenter')}
                   </Link>
                 </li>
               </ul>
@@ -167,14 +166,14 @@ export function Layout({ children }: LayoutProps) {
             {/* Contact */}
             <div>
               <h3 className="text-sm font-semibold text-text-primary mb-4">
-                İletişim
+                {t('footer.contact')}
               </h3>
               <ul className="space-y-2">
                 <li className="text-sm text-text-secondary">
-                  info@seragpt.com
+                  {t('footer.email')}
                 </li>
                 <li className="text-sm text-text-secondary">
-                  +90 XXX XXX XX XX
+                  {t('footer.phone')}
                 </li>
               </ul>
             </div>
@@ -182,7 +181,7 @@ export function Layout({ children }: LayoutProps) {
 
           <div className="mt-8 pt-8 border-t border-border">
             <p className="text-sm text-text-secondary text-center">
-              © 2024 SeraGPT. Tüm hakları saklıdır.
+              {t('footer.copyright')}
             </p>
           </div>
         </div>
