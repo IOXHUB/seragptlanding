@@ -269,7 +269,7 @@ export default function Index() {
 
       {/* Canlı Deneyim – Sohbet Akışı Section */}
       <section style={{ paddingTop: '80px', paddingBottom: '80px' }} className="py-12 sm:py-20">
-        <div style={{ maxWidth: '900px', margin: '0 auto', padding: '0 16px', textAlign: 'center' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 16px', textAlign: 'center' }}>
           <h2 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px' }}>
             Canlı Deneyim – Sohbet Akışı
           </h2>
