@@ -73,7 +73,7 @@ export default function Index() {
             </Link>
           </div>
           <p style={{ fontSize: '12px', color: '#6B7280', marginTop: '12px' }}>
-            Ücretsiz plan ile sınırlı analiz ve mesaj hakkı.
+            Ücretsiz plan ile sınırlı analiz ve mesaj hakk��.
           </p>
         </div>
       </section>
@@ -184,7 +184,7 @@ export default function Index() {
       {/* Hizmetlerimiz Section */}
       <section style={{ paddingTop: '80px', paddingBottom: '80px' }} className="py-12 sm:py-20">
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 16px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6" style={{ gap: '24px' }}>
+          <div className="grid grid-cols-1 gap-6" style={{ gap: '24px' }}>
             {/* Card A */}
             <div
               style={{
