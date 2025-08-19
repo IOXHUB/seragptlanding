@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "../hooks/useTranslation";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Index() {
+  const { t } = useTranslation();
+  const { language } = useLanguage();
   return (
     <div>
       {/* Hero Section */}
@@ -8,26 +12,23 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-text-primary mb-6 leading-tight">
-              Yapay Zeka Destekli{" "}
-              <span className="block">Sera Teknolojileri</span>
+              {t('home.heroTitle')}
             </h1>
             <p className="text-lg sm:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
-              SeraGPT ile tarımsal verimliliğinizi artırın. Modern sera
-              teknolojileri, akıllı otomasyon sistemleri ve profesyonel
-              danışmanlık hizmetleri.
+              {t('home.heroSubtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/proje-danismanligi"
+                to={`/${language}/proje-danismanligi`}
                 className="inline-flex items-center justify-center px-8 py-3 bg-button-bg text-button-foreground text-base font-medium rounded-lg hover:bg-button-bg-hover transition-colors"
               >
-                Proje Başlat
+                {t('home.heroButton')}
               </Link>
               <Link
-                to="/anahtar-teslim-sera"
+                to={`/${language}/anahtar-teslim-sera`}
                 className="inline-flex items-center justify-center px-8 py-3 bg-transparent text-text-primary text-base font-medium rounded-lg border border-border hover:bg-background-muted transition-colors"
               >
-                Hizmetleri İncele
+                {t('home.ctaButton')}
               </Link>
             </div>
           </div>
@@ -39,12 +40,8 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-text-primary mb-4">
-              Neden SeraGPT?
+              {t('home.featuresTitle')}
             </h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              Sera tarımcılığında yenilikçi çözümler sunan teknoloji ve
-              deneyimimizle yanınızdayız.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -66,12 +63,10 @@ export default function Index() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-4">
-                Akıllı Otomasyon
+                {t('home.aiOptimization')}
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                Yapay zeka destekli sistemlerle sera ortamınızı otomatik olarak
-                optimize edin. Sıcaklık, nem ve ışık kontrolü hiç bu kadar kolay
-                olmamıştı.
+                {t('home.aiOptimizationDesc')}
               </p>
             </div>
 
@@ -93,11 +88,10 @@ export default function Index() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-4">
-                Veri Analizi
+                {t('home.dataAnalytics')}
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                Sera verilerinizi analiz ederek verimlilik önerileri sunuyoruz.
-                Gerçek zamanlı raporlama ve performans takibi.
+                {t('home.dataAnalyticsDesc')}
               </p>
             </div>
 
@@ -119,11 +113,10 @@ export default function Index() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-4">
-                Uzman Desteği
+                {t('home.smartMonitoring')}
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                Deneyimli tarım mühendisleri ve teknisyenlerimizle 7/24 teknik
-                destek. Projelerinizde baştan sona yanınızdayız.
+                {t('home.smartMonitoringDesc')}
               </p>
             </div>
           </div>
