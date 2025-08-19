@@ -1,9 +1,15 @@
+import { useTranslation } from "../hooks/useTranslation";
+
 interface PlaceholderPageProps {
-  title: string;
-  description: string;
+  pageKey: 'blog' | 'support' | 'consulting' | 'turnkey';
 }
 
-export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
+export function PlaceholderPage({ pageKey }: PlaceholderPageProps) {
+  const { t } = useTranslation();
+
+  const title = t(`pages.${pageKey}.title`);
+  const description = t(`pages.${pageKey}.description`);
+
   return (
     <div className="section-padding">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
