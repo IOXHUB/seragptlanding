@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "../hooks/useTranslation";
+import { useLanguage } from "../contexts/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface LayoutProps {
   children: ReactNode;
@@ -7,13 +10,15 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   const location = useLocation();
+  const { t } = useTranslation();
+  const { language } = useLanguage();
 
   const navigation = [
-    { name: "Ana Sayfa", href: "/" },
-    { name: "Blog", href: "/blog" },
-    { name: "Destek", href: "/destek" },
-    { name: "Proje Danışmanlığı", href: "/proje-danismanligi" },
-    { name: "Anahtar Teslim Sera", href: "/anahtar-teslim-sera" },
+    { name: t('nav.home'), href: `/${language}` },
+    { name: t('nav.blog'), href: `/${language}/blog` },
+    { name: t('nav.support'), href: `/${language}/destek` },
+    { name: t('nav.consulting'), href: `/${language}/proje-danismanligi` },
+    { name: t('nav.turnkey'), href: `/${language}/anahtar-teslim-sera` },
   ];
 
   return (
@@ -48,27 +53,32 @@ export function Layout({ children }: LayoutProps) {
               ))}
             </nav>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                type="button"
-                className="text-text-secondary hover:text-text-primary p-2"
-                aria-label="Open main menu"
-              >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
+            {/* Language Switcher and Mobile menu */}
+            <div className="flex items-center gap-4">
+              <LanguageSwitcher />
+
+              {/* Mobile menu button */}
+              <div className="md:hidden">
+                <button
+                  type="button"
+                  className="text-text-secondary hover:text-text-primary p-2"
+                  aria-label="Open main menu"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
