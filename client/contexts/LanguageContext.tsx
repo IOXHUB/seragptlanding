@@ -6,6 +6,7 @@ import {
   ReactNode,
 } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { getTranslation } from '../locales';
 
 export type Language = "tr" | "en" | "de" | "ru";
 
@@ -41,6 +42,7 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
   const navigate = useNavigate();
   const location = useLocation();
   const [language, setLanguageState] = useState<Language>("tr");
+  const [isInitialized, setIsInitialized] = useState(false);
 
   // Extract language from URL path
   useEffect(() => {
@@ -49,11 +51,17 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
 
     if (LANGUAGES.some((lang) => lang.code === langFromPath)) {
       setLanguageState(langFromPath);
+      setIsInitialized(true);
     } else {
       // If no language in URL, default to Turkish and redirect
-      const newPath = `/tr${location.pathname}`;
-      navigate(newPath, { replace: true });
+      if (location.pathname !== "/" && !location.pathname.startsWith("/tr") && !location.pathname.startsWith("/en") && !location.pathname.startsWith("/de") && !location.pathname.startsWith("/ru")) {
+        const newPath = `/tr${location.pathname}`;
+        navigate(newPath, { replace: true });
+      } else if (location.pathname === "/") {
+        navigate("/tr", { replace: true });
+      }
       setLanguageState("tr");
+      setIsInitialized(true);
     }
   }, [location.pathname, navigate]);
 
@@ -77,17 +85,10 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
 
   // Translation function using actual translation files
   const t = (key: string): string => {
-    const keys = key.split(".");
-    const translations = {
-      tr: () => import("../locales/tr").then((m) => m.tr),
-      en: () => import("../locales/en").then((m) => m.en),
-      de: () => import("../locales/de").then((m) => m.de),
-      ru: () => import("../locales/ru").then((m) => m.ru),
-    };
-
-    // For now, we'll use a synchronous approach with pre-imported translations
-    // This will be optimized later with lazy loading if needed
-    return key;
+    if (!isInitialized) {
+      return key; // Return key while initializing
+    }
+    return getTranslation(language, key);
   };
 
   const value: LanguageContextType = {
