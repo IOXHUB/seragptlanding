@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "../hooks/useTranslation";
 import { useLanguage } from "../contexts/LanguageContext";
 import { PricingSection } from "../components/sections/PricingSection";
+import { FAQSection } from "../components/sections/FAQSection";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -390,6 +391,9 @@ export default function Index() {
 
       {/* Pricing Section */}
       <PricingSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* CTA Section */}
       <section className="section-padding bg-button-bg">
