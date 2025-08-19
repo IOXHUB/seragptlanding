@@ -54,6 +54,18 @@ export const tr = {
       title: "Blog",
       description:
         "Sera teknolojileri, tarımsal verimlilik ve yapay zeka hakkında güncel yazılar ve rehberler.",
+      featuredLabel: "Öne Çıkan",
+      latestPosts: "Son Yazılar",
+      readMore: "Devamını Oku",
+      backToBlog: "Blog'a Dön",
+      postNotFound: "Yazı Bulunamadı",
+      postNotFoundDesc: "Aradığınız blog yazısı bulunamadı.",
+      categories: {
+        technology: "Teknoloji",
+        irrigation: "Sulama",
+        future: "Gelecek",
+        organic: "Organik",
+      },
     },
     support: {
       title: "Destek",
