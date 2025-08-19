@@ -30,9 +30,15 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(
-  undefined,
-);
+// Create a default context value
+const defaultContext: LanguageContextType = {
+  language: 'tr',
+  setLanguage: () => {},
+  languages: LANGUAGES,
+  t: (key: string) => key,
+};
+
+const LanguageContext = createContext<LanguageContextType>(defaultContext);
 
 interface LanguageProviderProps {
   children: ReactNode;
@@ -51,18 +57,21 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
 
     if (LANGUAGES.some((lang) => lang.code === langFromPath)) {
       setLanguageState(langFromPath);
-      setIsInitialized(true);
     } else {
-      // If no language in URL, default to Turkish and redirect
-      if (location.pathname !== "/" && !location.pathname.startsWith("/tr") && !location.pathname.startsWith("/en") && !location.pathname.startsWith("/de") && !location.pathname.startsWith("/ru")) {
-        const newPath = `/tr${location.pathname}`;
-        navigate(newPath, { replace: true });
-      } else if (location.pathname === "/") {
-        navigate("/tr", { replace: true });
-      }
+      // Set default to Turkish without immediate redirect
       setLanguageState("tr");
-      setIsInitialized(true);
+
+      // Schedule redirect after component mounts
+      setTimeout(() => {
+        if (location.pathname === "/") {
+          navigate("/tr", { replace: true });
+        } else if (!location.pathname.startsWith("/tr") && !location.pathname.startsWith("/en") && !location.pathname.startsWith("/de") && !location.pathname.startsWith("/ru")) {
+          const newPath = `/tr${location.pathname}`;
+          navigate(newPath, { replace: true });
+        }
+      }, 0);
     }
+    setIsInitialized(true);
   }, [location.pathname, navigate]);
 
   const setLanguage = (newLang: Language) => {
@@ -107,8 +116,5 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error("useLanguage must be used within a LanguageProvider");
-  }
   return context;
 }
