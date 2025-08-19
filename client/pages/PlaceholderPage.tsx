@@ -13,9 +13,12 @@ export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
         </p>
         <div className="bg-background-muted border border-border rounded-lg p-8 card-shadow">
           <div className="text-6xl mb-4">🚧</div>
-          <h2 className="text-xl font-semibold text-text-primary mb-3">Sayfa Geliştiriliyor</h2>
+          <h2 className="text-xl font-semibold text-text-primary mb-3">
+            Sayfa Geliştiriliyor
+          </h2>
           <p className="text-text-secondary">
-            Bu sayfa henüz tamamlanmamıştır. İçerik eklemek için lütfen yeni talepler gönderin.
+            Bu sayfa henüz tamamlanmamıştır. İçerik eklemek için lütfen yeni
+            talepler gönderin.
           </p>
         </div>
       </div>

@@ -14,17 +14,17 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ["Inter", "sans-serif"],
       },
       fontSize: {
-        'xs': '12px',
-        'sm': '14px',
-        'base': '16px',
-        'lg': '18px',
-        'xl': '20px',
-        '2xl': '24px',
-        '3xl': '30px',
-        '4xl': '36px',
+        xs: "12px",
+        sm: "14px",
+        base: "16px",
+        lg: "18px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "30px",
+        "4xl": "36px",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -41,7 +41,7 @@ export default {
         },
         button: {
           bg: "hsl(var(--button-bg))",
-          'bg-hover': "hsl(var(--button-bg-hover))",
+          "bg-hover": "hsl(var(--button-bg-hover))",
           foreground: "hsl(var(--button-foreground))",
         },
         link: {
