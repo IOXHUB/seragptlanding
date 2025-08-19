@@ -86,4 +86,14 @@ export const tr = {
       backHome: "Ana Sayfaya Dön",
     },
   },
+
+  // Blog
+  blog: {
+    cta: {
+      title: "SeraGPT ile Sera Teknolojinizi Geliştirin",
+      subtitle: "Yapay zeka destekli sera çözümlerimiz ile verimliliğinizi artırın.",
+      consultingButton: "Ücretsiz Danışmanlık Al",
+      blogButton: "Diğer Yazılar",
+    },
+  },
 };
