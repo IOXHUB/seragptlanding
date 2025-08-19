@@ -129,6 +129,8 @@ export function Layout({ children }: LayoutProps) {
             </div>
           </div>
 
+          <span style={{ color: "#374151" }}>TR / EN / DE / RU</span>
+
           {/* Copyright */}
           <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border text-center">
             <p className="text-text-secondary text-xs sm:text-sm">
