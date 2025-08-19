@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { Layout } from "./components/Layout";
 import Index from "./pages/Index";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import { PlaceholderPage } from "./pages/PlaceholderPage";
 import NotFound from "./pages/NotFound";
 
@@ -28,10 +30,8 @@ export default function App() {
 
                 {/* Language-prefixed routes */}
                 <Route path="/:lang" element={<Index />} />
-                <Route
-                  path="/:lang/blog"
-                  element={<PlaceholderPage pageKey="blog" />}
-                />
+                <Route path="/:lang/blog" element={<Blog />} />
+                <Route path="/:lang/blog/:postId" element={<BlogPost />} />
                 <Route
                   path="/:lang/destek"
                   element={<PlaceholderPage pageKey="support" />}
@@ -46,10 +46,8 @@ export default function App() {
                 />
 
                 {/* Legacy routes without language prefix - redirect */}
-                <Route
-                  path="/blog"
-                  element={<PlaceholderPage pageKey="blog" />}
-                />
+                <Route path="/blog" element={<Blog />} />
+                <Route path="/blog/:postId" element={<BlogPost />} />
                 <Route
                   path="/destek"
                   element={<PlaceholderPage pageKey="support" />}
