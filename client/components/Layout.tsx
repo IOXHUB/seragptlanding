@@ -88,100 +88,63 @@ export function Layout({ children }: LayoutProps) {
       {/* Main content */}
       <main>{children}</main>
 
-      {/* Footer */}
-      <footer className="bg-background-muted border-t border-border mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Company info */}
-            <div className="md:col-span-1">
-              <Link to="/" className="flex items-center mb-4">
+      {/* Footer - Simplified LibreChat Style */}
+      <footer className="border-t border-border bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Main Footer Content */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Logo and Description */}
+            <div className="flex flex-col items-center md:items-start">
+              <Link to={`/${language}`} className="flex items-center mb-3">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                   alt="SeraGPT"
-                  className="h-6 w-auto"
+                  className="h-6 w-auto filter grayscale hover:grayscale-0 transition-all duration-200"
                 />
               </Link>
-              <p className="text-text-secondary text-sm leading-relaxed">
+              <p className="text-text-secondary text-sm max-w-md text-center md:text-left">
                 {t('footer.description')}
               </p>
             </div>
 
-            {/* Services */}
-            <div>
-              <h3 className="text-sm font-semibold text-text-primary mb-4">
-                {t('footer.services')}
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    to={`/${language}/proje-danismanligi`}
-                    className="text-sm text-text-secondary hover:text-link-hover"
-                  >
-                    {t('footer.consulting')}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={`/${language}/anahtar-teslim-sera`}
-                    className="text-sm text-text-secondary hover:text-link-hover"
-                  >
-                    {t('footer.turnkey')}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={`/${language}/destek`}
-                    className="text-sm text-text-secondary hover:text-link-hover"
-                  >
-                    {t('footer.support')}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h3 className="text-sm font-semibold text-text-primary mb-4">
-                {t('footer.resources')}
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    to={`/${language}/blog`}
-                    className="text-sm text-text-secondary hover:text-link-hover"
-                  >
-                    {t('footer.blog')}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to={`/${language}/destek`}
-                    className="text-sm text-text-secondary hover:text-link-hover"
-                  >
-                    {t('footer.supportCenter')}
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h3 className="text-sm font-semibold text-text-primary mb-4">
+            {/* Links */}
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <Link
+                to={`/${language}/proje-danismanligi`}
+                className="text-text-secondary hover:text-text-primary transition-colors"
+              >
+                {t('footer.consulting')}
+              </Link>
+              <Link
+                to={`/${language}/anahtar-teslim-sera`}
+                className="text-text-secondary hover:text-text-primary transition-colors"
+              >
+                {t('footer.turnkey')}
+              </Link>
+              <Link
+                to={`/${language}/blog`}
+                className="text-text-secondary hover:text-text-primary transition-colors"
+              >
+                {t('footer.blog')}
+              </Link>
+              <Link
+                to={`/${language}/destek`}
+                className="text-text-secondary hover:text-text-primary transition-colors"
+              >
+                {t('footer.support')}
+              </Link>
+              <a
+                href="mailto:info@seragpt.com"
+                className="text-text-secondary hover:text-text-primary transition-colors"
+              >
                 {t('footer.contact')}
-              </h3>
-              <ul className="space-y-2">
-                <li className="text-sm text-text-secondary">
-                  {t('footer.email')}
-                </li>
-                <li className="text-sm text-text-secondary">
-                  {t('footer.phone')}
-                </li>
-              </ul>
+              </a>
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-border">
-            <p className="text-sm text-text-secondary text-center">
+          {/* Copyright */}
+          <div className="mt-8 pt-6 border-t border-border text-center">
+            <p className="text-text-secondary text-sm">
               {t('footer.copyright')}
             </p>
           </div>
