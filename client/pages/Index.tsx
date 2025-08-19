@@ -88,7 +88,7 @@ export default function Index() {
                 Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği
               </h2>
               <p style={{ fontSize: '16px', color: '#374151', marginBottom: '24px', textAlign: 'center' }} className="text-gray-700">
-                Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım planlaması ve gecikmiş aksiyonlardan kaynaklanır. SeraGPT; 20+ teknik analiz, global veri servisleri ve tarımsal yapay zekâ destekli kurumsal raporlar sunar.
+                Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım planlaması ve gecikmi�� aksiyonlardan kaynaklanır. SeraGPT; 20+ teknik analiz, global veri servisleri ve tarımsal yapay zekâ destekli kurumsal raporlar sunar.
               </p>
 
               {/* KPI Cards */}
@@ -308,7 +308,7 @@ export default function Index() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                backgroundColor: '#2563EB',
+                backgroundColor: '#146448',
                 color: '#FFFFFF',
                 padding: '12px 20px',
                 borderRadius: '9999px',
