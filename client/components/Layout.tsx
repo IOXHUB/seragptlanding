@@ -14,11 +14,11 @@ export function Layout({ children }: LayoutProps) {
   const { language } = useLanguage();
 
   const navigation = [
-    { name: t('nav.home'), href: `/${language}` },
-    { name: t('nav.blog'), href: `/${language}/blog` },
-    { name: t('nav.support'), href: `/${language}/destek` },
-    { name: t('nav.consulting'), href: `/${language}/proje-danismanligi` },
-    { name: t('nav.turnkey'), href: `/${language}/anahtar-teslim-sera` },
+    { name: t("nav.home"), href: `/${language}` },
+    { name: t("nav.blog"), href: `/${language}/blog` },
+    { name: t("nav.support"), href: `/${language}/destek` },
+    { name: t("nav.consulting"), href: `/${language}/proje-danismanligi` },
+    { name: t("nav.turnkey"), href: `/${language}/anahtar-teslim-sera` },
   ];
 
   return (
@@ -103,7 +103,7 @@ export function Layout({ children }: LayoutProps) {
                 />
               </Link>
               <p className="text-text-secondary text-sm max-w-md text-center md:text-left">
-                {t('footer.description')}
+                {t("footer.description")}
               </p>
             </div>
 
@@ -113,31 +113,31 @@ export function Layout({ children }: LayoutProps) {
                 to={`/${language}/proje-danismanligi`}
                 className="text-text-secondary hover:text-text-primary transition-colors"
               >
-                {t('footer.consulting')}
+                {t("footer.consulting")}
               </Link>
               <Link
                 to={`/${language}/anahtar-teslim-sera`}
                 className="text-text-secondary hover:text-text-primary transition-colors"
               >
-                {t('footer.turnkey')}
+                {t("footer.turnkey")}
               </Link>
               <Link
                 to={`/${language}/blog`}
                 className="text-text-secondary hover:text-text-primary transition-colors"
               >
-                {t('footer.blog')}
+                {t("footer.blog")}
               </Link>
               <Link
                 to={`/${language}/destek`}
                 className="text-text-secondary hover:text-text-primary transition-colors"
               >
-                {t('footer.support')}
+                {t("footer.support")}
               </Link>
               <a
                 href="mailto:info@seragpt.com"
                 className="text-text-secondary hover:text-text-primary transition-colors"
               >
-                {t('footer.contact')}
+                {t("footer.contact")}
               </a>
             </div>
           </div>
@@ -145,7 +145,7 @@ export function Layout({ children }: LayoutProps) {
           {/* Copyright */}
           <div className="mt-8 pt-6 border-t border-border text-center">
             <p className="text-text-secondary text-sm">
-              {t('footer.copyright')}
+              {t("footer.copyright")}
             </p>
           </div>
         </div>

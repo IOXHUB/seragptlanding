@@ -16,10 +16,10 @@ export default function Index() {
             {/* Left: Content */}
             <div className="text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-primary mb-6 leading-tight max-w-[800px]">
-                {t('home.heroTitle')}
+                {t("home.heroTitle")}
               </h1>
               <p className="text-lg sm:text-xl text-text-secondary mb-8 leading-relaxed max-w-[600px]">
-                {t('home.heroSubtitle')}
+                {t("home.heroSubtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -49,7 +49,9 @@ export default function Index() {
                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
                     <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                     <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                    <div className="ml-4 text-xs text-text-secondary font-mono">chat.seragpt.com</div>
+                    <div className="ml-4 text-xs text-text-secondary font-mono">
+                      chat.seragpt.com
+                    </div>
                   </div>
 
                   {/* Mock chat interface */}
@@ -58,7 +60,9 @@ export default function Index() {
                       Sera sıcaklığım 28°C, nem %75. Öneriniz nedir?
                     </div>
                     <div className="bg-button-bg text-button-foreground rounded-lg p-3 text-sm ml-8">
-                      Sera koşullarınız optimum seviyede! İdeal sıcaklık aralığındasınız. Havalandırmayı artırarak nem seviyesini %65-70 arasına düşürmenizi öneririm.
+                      Sera koşullarınız optimum seviyede! İdeal sıcaklık
+                      aralığındasınız. Havalandırmayı artırarak nem seviyesini
+                      %65-70 arasına düşürmenizi öneririm.
                     </div>
                     <div className="bg-background rounded-lg p-3 text-sm text-text-secondary">
                       Teşekkürler! Sulama programı için öneriniz var mı?
@@ -84,10 +88,11 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">
-              {t('home.featuresTitle')}
+              {t("home.featuresTitle")}
             </h2>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              Sera tarımcılığında yenilikçi çözümler sunan teknoloji ve deneyimimizle yanınızdayız.
+              Sera tarımcılığında yenilikçi çözümler sunan teknoloji ve
+              deneyimimizle yanınızdayız.
             </p>
           </div>
 
@@ -95,91 +100,159 @@ export default function Index() {
             {/* Feature 1 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                <svg
+                  className="w-6 h-6 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
-                {t('home.aiOptimization')}
+                {t("home.aiOptimization")}
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                {t('home.aiOptimizationDesc')}
+                {t("home.aiOptimizationDesc")}
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                <svg
+                  className="w-6 h-6 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
-                {t('home.dataAnalytics')}
+                {t("home.dataAnalytics")}
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                {t('home.dataAnalyticsDesc')}
+                {t("home.dataAnalyticsDesc")}
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
-                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                <svg
+                  className="w-6 h-6 text-purple-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
-                {t('home.smartMonitoring')}
+                {t("home.smartMonitoring")}
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                {t('home.smartMonitoringDesc')}
+                {t("home.smartMonitoringDesc")}
               </p>
             </div>
 
             {/* Feature 4 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
-                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                <svg
+                  className="w-6 h-6 text-orange-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
                 Mobil Uygulamamız
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                Her yerden sera koşullarınızı takip edin. iOS ve Android uyumlu mobil uygulama.
+                Her yerden sera koşullarınızı takip edin. iOS ve Android uyumlu
+                mobil uygulama.
               </p>
             </div>
 
             {/* Feature 5 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
-                <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                <svg
+                  className="w-6 h-6 text-red-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
                 Acil Durum Uyarıları
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                Kritik sera koşullarında anlık bildirimler alın. SMS, email ve push notification desteği.
+                Kritik sera koşullarında anlık bildirimler alın. SMS, email ve
+                push notification desteği.
               </p>
             </div>
 
             {/* Feature 6 */}
             <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
               <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-200 transition-colors">
-                <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                <svg
+                  className="w-6 h-6 text-teal-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-text-primary mb-3">
                 Uzman Desteği
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
-                Deneyimli tarım mühendisleri ve teknisyenlerimizle 7/24 teknik destek.
+                Deneyimli tarım mühendisleri ve teknisyenlerimizle 7/24 teknik
+                destek.
               </p>
             </div>
           </div>

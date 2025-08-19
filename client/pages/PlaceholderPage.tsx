@@ -1,7 +1,7 @@
 import { useTranslation } from "../hooks/useTranslation";
 
 interface PlaceholderPageProps {
-  pageKey: 'blog' | 'support' | 'consulting' | 'turnkey';
+  pageKey: "blog" | "support" | "consulting" | "turnkey";
 }
 
 export function PlaceholderPage({ pageKey }: PlaceholderPageProps) {

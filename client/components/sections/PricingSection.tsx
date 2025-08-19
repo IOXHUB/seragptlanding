@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from '../../hooks/useTranslation';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "../../hooks/useTranslation";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export function PricingSection() {
   const { t } = useTranslation();
@@ -10,55 +10,55 @@ export function PricingSection() {
 
   const plans = [
     {
-      name: 'Başlangıç',
-      description: 'Küçük sera işletmeleri için',
-      monthlyPrice: '₺99',
-      yearlyPrice: '₺990',
+      name: "Başlangıç",
+      description: "Küçük sera işletmeleri için",
+      monthlyPrice: "₺99",
+      yearlyPrice: "₺990",
       features: [
-        'Temel sensör izleme',
-        '1 sera destegi',
-        'Mobil uygulama',
-        'Email destek',
-        'Temel raporlar'
+        "Temel sensör izleme",
+        "1 sera destegi",
+        "Mobil uygulama",
+        "Email destek",
+        "Temel raporlar",
       ],
       popular: false,
-      ctaText: 'Başla'
+      ctaText: "Başla",
     },
     {
-      name: 'Profesyonel',
-      description: 'Orta ölçekli sera işletmeleri için',
-      monthlyPrice: '₺299',
-      yearlyPrice: '₺2990',
+      name: "Profesyonel",
+      description: "Orta ölçekli sera işletmeleri için",
+      monthlyPrice: "₺299",
+      yearlyPrice: "₺2990",
       features: [
-        'Gelişmiş AI analizi',
-        '5 sera desteği',
-        'Otomatik sulama kontrolü',
-        'Öncelikli destek',
-        'Detaylı raporlama',
-        'API entegrasyonu',
-        'Acil durum uyarıları'
+        "Gelişmiş AI analizi",
+        "5 sera desteği",
+        "Otomatik sulama kontrolü",
+        "Öncelikli destek",
+        "Detaylı raporlama",
+        "API entegrasyonu",
+        "Acil durum uyarıları",
       ],
       popular: true,
-      ctaText: 'En Popüler'
+      ctaText: "En Popüler",
     },
     {
-      name: 'Kurumsal',
-      description: 'Büyük sera kompleksleri için',
-      monthlyPrice: '₺999',
-      yearlyPrice: '₺9990',
+      name: "Kurumsal",
+      description: "Büyük sera kompleksleri için",
+      monthlyPrice: "₺999",
+      yearlyPrice: "₺9990",
       features: [
-        'Sınırsız sera desteği',
-        'Özel AI modelleri',
-        'Tam otomasyon paketi',
-        '7/24 telefon desteği',
-        'Özel raporlama',
-        'Dedike hesap yöneticisi',
-        'Yerinde kurulum',
-        'Özel eğitim'
+        "Sınırsız sera desteği",
+        "Özel AI modelleri",
+        "Tam otomasyon paketi",
+        "7/24 telefon desteği",
+        "Özel raporlama",
+        "Dedike hesap yöneticisi",
+        "Yerinde kurulum",
+        "Özel eğitim",
       ],
       popular: false,
-      ctaText: 'İletişime Geç'
-    }
+      ctaText: "İletişime Geç",
+    },
   ];
 
   return (
@@ -69,27 +69,32 @@ export function PricingSection() {
             Fiyatlandırma
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-            İhtiyacınıza uygun planı seçin. İstediğiniz zaman yükseltebilir veya iptal edebilirsiniz.
+            İhtiyacınıza uygun planı seçin. İstediğiniz zaman yükseltebilir veya
+            iptal edebilirsiniz.
           </p>
-          
+
           {/* Yearly/Monthly Toggle */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <span className={`text-sm font-medium ${!isYearly ? 'text-text-primary' : 'text-text-secondary'}`}>
+            <span
+              className={`text-sm font-medium ${!isYearly ? "text-text-primary" : "text-text-secondary"}`}
+            >
               Aylık
             </span>
             <button
               onClick={() => setIsYearly(!isYearly)}
               className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                isYearly ? 'bg-button-bg' : 'bg-gray-300'
+                isYearly ? "bg-button-bg" : "bg-gray-300"
               }`}
             >
               <span
                 className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                  isYearly ? 'translate-x-6' : 'translate-x-1'
+                  isYearly ? "translate-x-6" : "translate-x-1"
                 }`}
               />
             </button>
-            <span className={`text-sm font-medium ${isYearly ? 'text-text-primary' : 'text-text-secondary'}`}>
+            <span
+              className={`text-sm font-medium ${isYearly ? "text-text-primary" : "text-text-secondary"}`}
+            >
               Yıllık
               <span className="ml-1 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
                 %17 indirim
@@ -103,9 +108,9 @@ export function PricingSection() {
             <div
               key={plan.name}
               className={`relative bg-background rounded-2xl p-8 border-2 transition-all duration-200 hover:shadow-lg ${
-                plan.popular 
-                  ? 'border-button-bg shadow-lg scale-105' 
-                  : 'border-border hover:border-button-bg/30'
+                plan.popular
+                  ? "border-button-bg shadow-lg scale-105"
+                  : "border-border hover:border-button-bg/30"
               }`}
             >
               {plan.popular && (
@@ -128,7 +133,7 @@ export function PricingSection() {
                     {isYearly ? plan.yearlyPrice : plan.monthlyPrice}
                   </span>
                   <span className="text-text-secondary ml-1">
-                    /{isYearly ? 'yıl' : 'ay'}
+                    /{isYearly ? "yıl" : "ay"}
                   </span>
                 </div>
               </div>
@@ -147,17 +152,23 @@ export function PricingSection() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-text-secondary text-sm">{feature}</span>
+                    <span className="text-text-secondary text-sm">
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
 
               <Link
-                to={index === 2 ? `/${language}/destek` : `/${language}/proje-danismanligi`}
+                to={
+                  index === 2
+                    ? `/${language}/destek`
+                    : `/${language}/proje-danismanligi`
+                }
                 className={`w-full inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
                   plan.popular
-                    ? 'bg-button-bg text-button-foreground hover:bg-button-bg-hover shadow-sm'
-                    : 'bg-transparent text-text-primary border border-border hover:bg-background-muted'
+                    ? "bg-button-bg text-button-foreground hover:bg-button-bg-hover shadow-sm"
+                    : "bg-transparent text-text-primary border border-border hover:bg-background-muted"
                 }`}
               >
                 {plan.ctaText}
@@ -168,7 +179,8 @@ export function PricingSection() {
 
         <div className="text-center mt-12">
           <p className="text-text-secondary text-sm">
-            Tüm planlar 14 günlük ücretsiz deneme ile başlar. Kredi kartı bilgisi gerekmez.
+            Tüm planlar 14 günlük ücretsiz deneme ile başlar. Kredi kartı
+            bilgisi gerekmez.
           </p>
         </div>
       </div>

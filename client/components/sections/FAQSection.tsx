@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useTranslation } from '../../hooks/useTranslation';
+import { useState } from "react";
+import { useTranslation } from "../../hooks/useTranslation";
 
 export function FAQSection() {
   const { t } = useTranslation();
@@ -8,36 +8,44 @@ export function FAQSection() {
   const faqs = [
     {
       question: "SeraGPT nasıl çalışır?",
-      answer: "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder. Sıcaklık, nem, ışık ve toprak nem değerlerini sürekli izleyerek optimal sera koşullarını sağlamak için otomatik ayarlamalar yapar ve size öneriler sunar."
+      answer:
+        "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder. Sıcaklık, nem, ışık ve toprak nem değerlerini sürekli izleyerek optimal sera koşullarını sağlamak için otomatik ayarlamalar yapar ve size öneriler sunar.",
     },
     {
       question: "Hangi sensörlerle uyumlu?",
-      answer: "SeraGPT platformu yaygın kullanılan tüm sera sensörleriyle uyumludur. Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Ayrıca mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz."
+      answer:
+        "SeraGPT platformu yaygın kullanılan tüm sera sensörleriyle uyumludur. Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Ayrıca mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz.",
     },
     {
       question: "Kurulum süreci ne kadar sürer?",
-      answer: "Standart kurulum 1-3 gün arasında tamamlanır. Bu süre sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir. Uzman ekibimiz kurulum öncesi detaylı planlama yapar ve süreçle ilgili bilgi verir."
+      answer:
+        "Standart kurulum 1-3 gün arasında tamamlanır. Bu süre sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir. Uzman ekibimiz kurulum öncesi detaylı planlama yapar ve süreçle ilgili bilgi verir.",
     },
     {
       question: "Mobil uygulamaya ihtiyaç var mı?",
-      answer: "Mobil uygulama isteğe bağlıdır. SeraGPT'ye web tarayıcısından da erişebilirsiniz. Ancak mobil uygulama push bildirimleri, çevrimdışı erişim ve daha hızlı kontrol imkanları sağlar."
+      answer:
+        "Mobil uygulama isteğe bağlıdır. SeraGPT'ye web tarayıcısından da erişebilirsiniz. Ancak mobil uygulama push bildirimleri, çevrimdışı erişim ve daha hızlı kontrol imkanları sağlar.",
     },
     {
       question: "Veri güvenliği nasıl sağlanıyor?",
-      answer: "Tüm verileriniz SSL şifreleme ile korunur. Veriler güvenli bulut sunucularımızda depolanır ve sadece sizin erişiminiz vardır. Veri yedekleme ve kurtarma sistemlerimiz 7/24 aktiftir."
+      answer:
+        "Tüm verileriniz SSL şifreleme ile korunur. Veriler güvenli bulut sunucularımızda depolanır ve sadece sizin erişiminiz vardır. Veri yedekleme ve kurtarma sistemlerimiz 7/24 aktiftir.",
     },
     {
       question: "Teknik destek nasıl alırım?",
-      answer: "7/24 teknik destek hattımız, email destek ve canlı chat desteğimiz bulunur. Acil durumlar için SMS uyarı sistemi mevcuttur. Ayrıca uzaktan erişim ile anlık müdahale imkanı sağlarız."
+      answer:
+        "7/24 teknik destek hattımız, email destek ve canlı chat desteğimiz bulunur. Acil durumlar için SMS uyarı sistemi mevcuttur. Ayrıca uzaktan erişim ile anlık müdahale imkanı sağlarız.",
     },
     {
       question: "Ücretsiz deneme süresi var mı?",
-      answer: "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilir, sera verilerinizi analiz edebilirsiniz. Kredi kartı bilgisi gerektirmez."
+      answer:
+        "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilir, sera verilerinizi analiz edebilirsiniz. Kredi kartı bilgisi gerektirmez.",
     },
     {
       question: "Sözleşmeyi iptal edebilir miyim?",
-      answer: "Evet, istediğiniz zaman sözleşmenizi iptal edebilirsiniz. 30 günlük bildirimle iptal işlemi yapılır. Ödediğiniz aylık ücret boyunca hizmet almaya devam edersiniz."
-    }
+      answer:
+        "Evet, istediğiniz zaman sözleşmenizi iptal edebilirsiniz. 30 günlük bildirimle iptal işlemi yapılır. Ödediğiniz aylık ücret boyunca hizmet almaya devam edersiniz.",
+    },
   ];
 
   const toggleFAQ = (index: number) => {
@@ -71,7 +79,7 @@ export function FAQSection() {
                 </span>
                 <svg
                   className={`w-5 h-5 text-text-secondary transition-transform duration-200 flex-shrink-0 ${
-                    openIndex === index ? 'rotate-180' : ''
+                    openIndex === index ? "rotate-180" : ""
                   }`}
                   fill="none"
                   stroke="currentColor"
@@ -85,12 +93,12 @@ export function FAQSection() {
                   />
                 </svg>
               </button>
-              
+
               <div
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index 
-                    ? 'max-h-96 opacity-100' 
-                    : 'max-h-0 opacity-0'
+                  openIndex === index
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="px-6 pb-4 pt-0">

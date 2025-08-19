@@ -28,16 +28,40 @@ export default function App() {
 
                 {/* Language-prefixed routes */}
                 <Route path="/:lang" element={<Index />} />
-                <Route path="/:lang/blog" element={<PlaceholderPage pageKey="blog" />} />
-                <Route path="/:lang/destek" element={<PlaceholderPage pageKey="support" />} />
-                <Route path="/:lang/proje-danismanligi" element={<PlaceholderPage pageKey="consulting" />} />
-                <Route path="/:lang/anahtar-teslim-sera" element={<PlaceholderPage pageKey="turnkey" />} />
+                <Route
+                  path="/:lang/blog"
+                  element={<PlaceholderPage pageKey="blog" />}
+                />
+                <Route
+                  path="/:lang/destek"
+                  element={<PlaceholderPage pageKey="support" />}
+                />
+                <Route
+                  path="/:lang/proje-danismanligi"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/:lang/anahtar-teslim-sera"
+                  element={<PlaceholderPage pageKey="turnkey" />}
+                />
 
                 {/* Legacy routes without language prefix - redirect */}
-                <Route path="/blog" element={<PlaceholderPage pageKey="blog" />} />
-                <Route path="/destek" element={<PlaceholderPage pageKey="support" />} />
-                <Route path="/proje-danismanligi" element={<PlaceholderPage pageKey="consulting" />} />
-                <Route path="/anahtar-teslim-sera" element={<PlaceholderPage pageKey="turnkey" />} />
+                <Route
+                  path="/blog"
+                  element={<PlaceholderPage pageKey="blog" />}
+                />
+                <Route
+                  path="/destek"
+                  element={<PlaceholderPage pageKey="support" />}
+                />
+                <Route
+                  path="/proje-danismanligi"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/anahtar-teslim-sera"
+                  element={<PlaceholderPage pageKey="turnkey" />}
+                />
 
                 <Route path="*" element={<NotFound />} />
               </Routes>
