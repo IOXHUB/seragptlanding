@@ -32,7 +32,7 @@ export function Layout({ children }: LayoutProps) {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                 alt="SeraGPT"
-                className="h-7 w-auto filter grayscale hover:grayscale-0 transition-all duration-200"
+                className="h-7 w-auto transition-all duration-200"
               />
             </Link>
 
@@ -99,7 +99,7 @@ export function Layout({ children }: LayoutProps) {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                   alt="SeraGPT"
-                  className="h-6 w-auto filter grayscale hover:grayscale-0 transition-all duration-200"
+                  className="h-6 w-auto transition-all duration-200"
                 />
               </Link>
               <p className="text-text-secondary text-sm max-w-md text-center md:text-left">
