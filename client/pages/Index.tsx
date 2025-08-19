@@ -10,7 +10,7 @@ export default function Index() {
     <div style={{ fontFamily: 'Inter, system-ui, -apple-system', color: '#0A0A0A', backgroundColor: '#FFFFFF' }}>
       {/* Hero Section */}
       <section style={{ paddingTop: '96px', paddingBottom: '96px' }} className="sm:py-16 md:py-24">
-        <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center', padding: '0 16px' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center', padding: '0 16px' }}>
           <h1 
             style={{ 
               fontSize: '42px', 
