@@ -10,8 +10,21 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   const location = useLocation();
-  const { t } = useTranslation();
-  const { language } = useLanguage();
+
+  // Add try-catch to handle context initialization
+  let t: (key: string) => string;
+  let language: string;
+
+  try {
+    const translation = useTranslation();
+    const languageContext = useLanguage();
+    t = translation.t;
+    language = languageContext.language;
+  } catch (error) {
+    // Fallback during initialization
+    t = (key: string) => key;
+    language = 'tr';
+  }
 
   const navigation = [
     { name: t("nav.home"), href: `/${language}` },
