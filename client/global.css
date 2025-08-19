@@ -22,21 +22,21 @@
     --input: 220 13% 91%;
     --ring: 217 91% 60%; /* #2563EB */
 
-    --button-bg: 217 91% 60%; /* #2563EB */
-    --button-bg-hover: 217 91% 55%; /* #1D4ED8 */
+    --button-bg: 156 77% 25%; /* #146448 */
+    --button-bg-hover: 156 77% 20%; /* #0F5037 */
     --button-foreground: 0 0% 100%;
 
-    --link: 217 91% 60%; /* #2563EB */
-    --link-hover: 217 91% 55%; /* #1D4ED8 */
+    --link: 156 77% 25%; /* #146448 */
+    --link-hover: 156 77% 20%; /* #0F5037 */
 
     /* Shadcn compatibility */
-    --primary: 217 91% 60%;
+    --primary: 156 77% 25%;
     --primary-foreground: 0 0% 100%;
     --secondary: 220 14% 96%;
     --secondary-foreground: 215 15% 4%;
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
-    --accent: 217 91% 60%;
+    --accent: 156 77% 25%;
     --accent-foreground: 0 0% 100%;
     --card: 0 0% 100%;
     --card-foreground: 215 15% 4%;
