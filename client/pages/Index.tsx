@@ -80,8 +80,8 @@ export default function Index() {
 
       {/* Neden Bu Kadar Kritik Section */}
       <section style={{ paddingTop: '80px', paddingBottom: '80px' }} className="py-12 sm:py-20">
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10" style={{ gap: '40px' }}>
+        <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 16px' }}>
+          <div className="grid grid-cols-1 gap-10" style={{ gap: '40px' }}>
             {/* Left Column - 60% */}
             <div className="lg:col-span-3">
               <h2 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '12px' }} className="text-2xl sm:text-3xl font-bold mb-4">
