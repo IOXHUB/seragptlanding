@@ -109,59 +109,45 @@ export default function Index() {
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
-          <div className="grid grid-cols-1 gap-10" style={{ gap: "40px" }}>
-            {/* Content */}
-            <div>
-              <h2
-                style={{
-                  fontSize: "32px",
-                  fontWeight: "700",
-                  marginBottom: "12px",
-                  textAlign: "center",
-                }}
-                className="text-2xl sm:text-3xl font-bold mb-4"
-              >
-                Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği
-              </h2>
-              <p
-                style={{
-                  fontSize: "16px",
-                  color: "#374151",
-                  marginBottom: "24px",
-                  textAlign: "center",
-                }}
-                className="text-gray-700"
-              >
-                Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım
-                planlaması ve gecikmi�� aksiyonlardan kaynaklanır. SeraGPT; 20+
-                teknik analiz, global veri servisleri ve tarımsal yapay zekâ
-                destekli kurumsal raporlar sunar.
-              </p>
+          <div style={{ textAlign: "center" }}>
+            {/* Upper Slogan */}
+            <p
+              style={{
+                fontSize: "14px",
+                color: "#146448",
+                fontWeight: "600",
+                marginBottom: "16px",
+                textTransform: "uppercase",
+                letterSpacing: "0.5px",
+              }}
+            >
+              Veriye dayalı kararlar için 20+ profesyonel analiz
+            </p>
 
-              {/* KPI Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {[
-                  "5–10 yıl iklim senaryosu",
-                  "ROI & CAPEX/OPEX modelleme",
-                  "Enerji & su optimizasyonu",
-                  "Pazar & fiyat öngörüleri",
-                ].map((text, index) => (
-                  <div
-                    key={index}
-                    style={{
-                      border: "1px solid #E5E7EB",
-                      borderRadius: "16px",
-                      padding: "16px",
-                      backgroundColor: "#FFFFFF",
-                      textAlign: "center",
-                      fontWeight: "600",
-                    }}
-                  >
-                    {text}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <h2
+              style={{
+                fontSize: "32px",
+                fontWeight: "700",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+              className="text-2xl sm:text-3xl font-bold mb-4"
+            >
+              Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği
+            </h2>
+            <p
+              style={{
+                fontSize: "16px",
+                color: "#374151",
+                textAlign: "center",
+              }}
+              className="text-gray-700"
+            >
+              Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım
+              planlaması ve gecikmi�� aksiyonlardan kaynaklanır. SeraGPT; 20+
+              teknik analiz, global veri servisleri ve tarımsal yapay zekâ
+              destekli kurumsal raporlar sunar.
+            </p>
           </div>
         </div>
       </section>
@@ -188,67 +174,66 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4" style={{ gap: "16px" }}>
+          {/* Animated Tag Cloud */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "12px",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: "32px",
+            }}
+          >
             {[
-              {
-                title: "Enerji Verimliliği Analizi",
-                desc: "Isıtma/soğutma/aydınlatma için optimizasyon.",
-              },
-              {
-                title: "İklim Senaryoları & Risk",
-                desc: "Bölgesel verilerle 5–10 yıllık projeksiyon.",
-              },
-              {
-                title: "Pazar & Fiyat Öngörüleri",
-                desc: "Global API trendleriyle planlama.",
-              },
-              {
-                title: "Yatırım Geri Dönüş (ROI)",
-                desc: "Amortisman ve kârlılık senaryoları.",
-              },
-              {
-                title: "Su & Sulama Optimizasyonu",
-                desc: "Su ayak izi ve verimlilik.",
-              },
-              {
-                title: "Hastalık & Zararlı Risk",
-                desc: "Önleyici eylem planları.",
-              },
-              { title: "Karbon Ayak İzi", desc: "Yeşil finansman uyumu." },
-              {
-                title: "Üretim Optimizasyonu (AI)",
-                desc: "Verim senaryoları ve öneriler.",
-              },
-              {
-                title: "Substrate & Besin Yönetimi",
-                desc: "EC/pH hedefleme stratejileri.",
-              },
-              {
-                title: "Işık/PPFD Planlama",
-                desc: "DLI bazlı aydınlatma senaryosu.",
-              },
-              {
-                title: "Yapı & Kaplama Seçimi",
-                desc: "Isı yükü ve transmisyon analizi.",
-              },
-              { title: "Lojistik & Hasat Zamanlama", desc: "Talep eşleşmesi." },
-            ].map((item, index) => (
-              <div
+              "Enerji Verimliliği",
+              "İklim Senaryoları",
+              "Pazar Öngörüleri",
+              "ROI Analizi",
+              "Su Optimizasyonu",
+              "Hastalık Riski",
+              "Karbon Ayak İzi",
+              "Üretim AI",
+              "Besin Yönetimi",
+              "Işık Planlama",
+              "Yapı Seçimi",
+              "Hasat Zamanlama",
+              "Risk Yönetimi",
+              "Verimlilik",
+              "Sürdürülebilirlik",
+              "Maliyet Analizi",
+              "Kalite Kontrol",
+              "Otomasyon",
+              "Veri Analizi",
+              "Yapay Zeka",
+            ].map((tag, index) => (
+              <span
                 key={index}
                 style={{
-                  border: "1px solid #E5E7EB",
-                  borderRadius: "16px",
-                  padding: "20px",
-                  backgroundColor: "#FFFFFF",
+                  display: "inline-block",
+                  padding: "8px 16px",
+                  backgroundColor: index % 4 === 0 ? "#146448" : index % 4 === 1 ? "#F3F4F6" : index % 4 === 2 ? "#E5F4F0" : "#FFFFFF",
+                  color: index % 4 === 0 ? "#FFFFFF" : "#374151",
+                  borderRadius: "20px",
+                  fontSize: index % 5 === 0 ? "16px" : index % 5 === 1 ? "14px" : index % 5 === 2 ? "18px" : index % 5 === 3 ? "12px" : "15px",
+                  fontWeight: index % 3 === 0 ? "700" : "500",
+                  border: index % 4 === 0 ? "none" : "1px solid #E5E7EB",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
+                }}
+                className="hover:scale-105 hover:shadow-md"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(20, 100, 72, 0.15)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow = "none";
                 }}
               >
-                <h3 style={{ fontWeight: "700", marginBottom: "6px" }}>
-                  {item.title}
-                </h3>
-                <p style={{ color: "#374151", fontSize: "14px" }}>
-                  {item.desc}
-                </p>
-              </div>
+                {tag}
+              </span>
             ))}
           </div>
 
@@ -270,6 +255,20 @@ export default function Index() {
             </Link>
           </div>
         </div>
+
+        {/* CSS Animation */}
+        <style jsx>{`
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}</style>
       </section>
 
       {/* Hizmetlerimiz Section */}
