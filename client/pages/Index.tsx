@@ -277,7 +277,7 @@ export default function Index() {
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
-          <div className="grid grid-cols-1 gap-6" style={{ gap: "24px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
             {/* Card A */}
             <div
               style={{
@@ -287,6 +287,11 @@ export default function Index() {
                 backgroundColor: "#FFFFFF",
                 height: "100%",
                 textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "0 auto",
               }}
             >
               <h3
@@ -316,7 +321,10 @@ export default function Index() {
                   listStyle: "none",
                   padding: 0,
                   textAlign: "left",
-                  display: "inline-block",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <li style={{ marginBottom: "4px" }}>
@@ -715,7 +723,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-              Bize Ulaşın
+<p>DESTEK</p>
             </a>
           </div>
         </div>
