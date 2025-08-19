@@ -24,9 +24,11 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold text-text-primary">
-                SeraGPT
-              </span>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
+                alt="SeraGPT"
+                className="h-8 w-auto"
+              />
             </Link>
 
             {/* Navigation */}
