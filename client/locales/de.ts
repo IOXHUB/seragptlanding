@@ -55,6 +55,18 @@ export const de = {
       title: "Blog",
       description:
         "Aktuelle Artikel und Leitfäden über Gewächshaustechnologien, landwirtschaftliche Produktivität und künstliche Intelligenz.",
+      featuredLabel: "Empfohlen",
+      latestPosts: "Neueste Beiträge",
+      readMore: "Weiterlesen",
+      backToBlog: "Zurück zum Blog",
+      postNotFound: "Beitrag nicht gefunden",
+      postNotFoundDesc: "Der gesuchte Blog-Beitrag konnte nicht gefunden werden.",
+      categories: {
+        technology: "Technologie",
+        irrigation: "Bewässerung",
+        future: "Zukunft",
+        organic: "Bio",
+      },
     },
     support: {
       title: "Support",
