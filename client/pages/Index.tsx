@@ -41,7 +41,7 @@ export default function Index() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                backgroundColor: '#2563EB',
+                backgroundColor: '#146448',
                 color: '#FFFFFF',
                 padding: '14px 22px',
                 borderRadius: '9999px',
