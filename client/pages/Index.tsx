@@ -420,7 +420,11 @@ export default function Index() {
 
       {/* Pricing Section */}
       <section
-        style={{ paddingTop: "80px", paddingBottom: "80px", backgroundColor: "#F9FAFB" }}
+        style={{
+          paddingTop: "80px",
+          paddingBottom: "80px",
+          backgroundColor: "#F9FAFB",
+        }}
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
@@ -451,10 +455,22 @@ export default function Index() {
                 textAlign: "center",
               }}
             >
-              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+              <h3
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  marginBottom: "8px",
+                }}
+              >
                 Başlangıç
               </h3>
-              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+              <p
+                style={{
+                  color: "#6B7280",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                }}
+              >
                 Küçük sera işletmeleri için
               </p>
               <div style={{ marginBottom: "16px" }}>
@@ -506,14 +522,28 @@ export default function Index() {
               >
                 En Popüler
               </div>
-              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+              <h3
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  marginBottom: "8px",
+                }}
+              >
                 Profesyonel
               </h3>
-              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+              <p
+                style={{
+                  color: "#6B7280",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                }}
+              >
                 Orta ölçekli sera işletmeleri için
               </p>
               <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺299</span>
+                <span style={{ fontSize: "32px", fontWeight: "700" }}>
+                  ₺299
+                </span>
                 <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
               </div>
               <a
@@ -544,14 +574,28 @@ export default function Index() {
                 textAlign: "center",
               }}
             >
-              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+              <h3
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "700",
+                  marginBottom: "8px",
+                }}
+              >
                 Kurumsal
               </h3>
-              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+              <p
+                style={{
+                  color: "#6B7280",
+                  fontSize: "14px",
+                  marginBottom: "16px",
+                }}
+              >
                 Büyük sera kompleksleri için
               </p>
               <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺999</span>
+                <span style={{ fontSize: "32px", fontWeight: "700" }}>
+                  ₺999
+                </span>
                 <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
               </div>
               <Link
@@ -606,20 +650,24 @@ export default function Index() {
             {[
               {
                 question: "SeraGPT nasıl çalışır?",
-                answer: "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar."
+                answer:
+                  "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
               },
               {
                 question: "Hangi sensörlerle uyumlu?",
-                answer: "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz."
+                answer:
+                  "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz.",
               },
               {
                 question: "Kurulum süreci ne kadar sürer?",
-                answer: "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir."
+                answer:
+                  "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir.",
               },
               {
                 question: "Ücretsiz deneme süresi var mı?",
-                answer: "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz."
-              }
+                answer:
+                  "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz.",
+              },
             ].map((faq, index) => (
               <div
                 key={index}
@@ -630,10 +678,22 @@ export default function Index() {
                   backgroundColor: "#FFFFFF",
                 }}
               >
-                <h3 style={{ fontWeight: "700", marginBottom: "8px", fontSize: "16px" }}>
+                <h3
+                  style={{
+                    fontWeight: "700",
+                    marginBottom: "8px",
+                    fontSize: "16px",
+                  }}
+                >
                   {faq.question}
                 </h3>
-                <p style={{ color: "#374151", fontSize: "14px", lineHeight: "1.5" }}>
+                <p
+                  style={{
+                    color: "#374151",
+                    fontSize: "14px",
+                    lineHeight: "1.5",
+                  }}
+                >
                   {faq.answer}
                 </p>
               </div>
@@ -664,7 +724,11 @@ export default function Index() {
 
       {/* Final CTA Section */}
       <section
-        style={{ paddingTop: "80px", paddingBottom: "80px", backgroundColor: "#F9FAFB" }}
+        style={{
+          paddingTop: "80px",
+          paddingBottom: "80px",
+          backgroundColor: "#F9FAFB",
+        }}
         className="py-12 sm:py-20"
       >
         <div
