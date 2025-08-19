@@ -212,10 +212,26 @@ export default function Index() {
                 style={{
                   display: "inline-block",
                   padding: "8px 16px",
-                  backgroundColor: index % 4 === 0 ? "#146448" : index % 4 === 1 ? "#F3F4F6" : index % 4 === 2 ? "#E5F4F0" : "#FFFFFF",
+                  backgroundColor:
+                    index % 4 === 0
+                      ? "#146448"
+                      : index % 4 === 1
+                        ? "#F3F4F6"
+                        : index % 4 === 2
+                          ? "#E5F4F0"
+                          : "#FFFFFF",
                   color: index % 4 === 0 ? "#FFFFFF" : "#374151",
                   borderRadius: "20px",
-                  fontSize: index % 5 === 0 ? "16px" : index % 5 === 1 ? "14px" : index % 5 === 2 ? "18px" : index % 5 === 3 ? "12px" : "15px",
+                  fontSize:
+                    index % 5 === 0
+                      ? "16px"
+                      : index % 5 === 1
+                        ? "14px"
+                        : index % 5 === 2
+                          ? "18px"
+                          : index % 5 === 3
+                            ? "12px"
+                            : "15px",
                   fontWeight: index % 3 === 0 ? "700" : "500",
                   border: index % 4 === 0 ? "none" : "1px solid #E5E7EB",
                   cursor: "pointer",
@@ -225,7 +241,8 @@ export default function Index() {
                 className="hover:scale-105 hover:shadow-md"
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.05)";
-                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(20, 100, 72, 0.15)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 12px rgba(20, 100, 72, 0.15)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "scale(1)";
@@ -255,7 +272,6 @@ export default function Index() {
             </Link>
           </div>
         </div>
-
       </section>
 
       {/* Hizmetlerimiz Section */}
@@ -264,7 +280,9 @@ export default function Index() {
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+          >
             {/* Card A */}
             <div
               style={{
@@ -375,9 +393,7 @@ export default function Index() {
                   marginBottom: "12px",
                 }}
               >
-                <p>
-                  Çözüm ortaklarımız: ININSA, HBAGRO, HERMISAN, ISITMAX
-                </p>
+                <p>Çözüm ortaklarımız: ININSA, HBAGRO, HERMISAN, ISITMAX</p>
               </p>
               <ul
                 style={{
@@ -720,7 +736,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-<p>DESTEK</p>
+              <p>DESTEK</p>
             </a>
           </div>
         </div>
@@ -819,7 +835,6 @@ export default function Index() {
       >
         Verileriniz gizli tutulur. KVKK/GDPR uyumlu süreçler.
       </div>
-
     </div>
   );
 }
