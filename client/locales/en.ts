@@ -93,7 +93,8 @@ export const en = {
   blog: {
     cta: {
       title: "Improve Your Greenhouse Technology with SeraGPT",
-      subtitle: "Increase your efficiency with our AI-powered greenhouse solutions.",
+      subtitle:
+        "Increase your efficiency with our AI-powered greenhouse solutions.",
       consultingButton: "Get Free Consultation",
       blogButton: "Other Articles",
     },

@@ -9,7 +9,7 @@ const blogPostsContent = {
       tr: "Sera Sıcaklık Kontrolünde Yapay Zeka Kullanımı",
       en: "Using AI for Greenhouse Temperature Control",
       de: "KI-Einsatz für Gewächshaus-Temperaturkontrolle",
-      ru: "Использование ИИ для контроля температуры в теплице"
+      ru: "Использование ИИ для контроля температуры в теплице",
     },
     content: {
       tr: `# Sera Sıcaklık Kontrolünde Yapay Zeka Kullanımı
@@ -319,27 +319,29 @@ Als SeraGPT bieten wir umfassende Lösungen zur Integration dieser Technologien 
 
 Использование ИИ в контроле температуры теплиц стало неотъемлемой частью современного сельского хозяйства. Первоначальные инвестиционные затраты окупаются в среднесрочной перспективе за счет энергосбережения и повышения эффективности.
 
-Как SeraGPT, мы предлагаем комплексные решения для интеграции этих технологий в тепличные операции.`
+Как SeraGPT, мы предлагаем комплексные решения для интеграции этих технологий в тепличные операции.`,
     },
     date: "2024-01-15",
     readTime: "5 min",
     category: {
       tr: "Teknoloji",
-      en: "Technology", 
+      en: "Technology",
       de: "Technologie",
-      ru: "Технологии"
+      ru: "Технологии",
     },
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=600&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=600&fit=crop",
     author: {
       name: "Dr. Ahmet Sera",
       bio: {
         tr: "Tarım Teknolojileri Uzmanı",
         en: "Agricultural Technology Expert",
-        de: "Experte für Landwirtschaftstechnologie", 
-        ru: "Эксперт по сельскохозяйственным технологиям"
+        de: "Experte für Landwirtschaftstechnologie",
+        ru: "Эксперт по сельскохозяйственным технологиям",
       },
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
-    }
+      avatar:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+    },
   },
   // Add more blog posts here...
 };
@@ -349,14 +351,20 @@ export default function BlogPost() {
   const { language } = useLanguage();
   const { t } = useTranslation();
 
-  const post = postId ? blogPostsContent[postId as keyof typeof blogPostsContent] : null;
+  const post = postId
+    ? blogPostsContent[postId as keyof typeof blogPostsContent]
+    : null;
 
   if (!post) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-text-primary mb-4">Yazı Bulunamadı</h1>
-          <p className="text-text-secondary mb-6">Aradığınız blog yazısı bulunamadı.</p>
+          <h1 className="text-2xl font-bold text-text-primary mb-4">
+            Yazı Bulunamadı
+          </h1>
+          <p className="text-text-secondary mb-6">
+            Aradığınız blog yazısı bulunamadı.
+          </p>
           <Link
             to={`/${language}/blog`}
             className="inline-flex items-center px-6 py-3 bg-button-bg text-button-foreground font-semibold rounded-lg hover:bg-button-bg-hover transition-colors"
@@ -379,8 +387,18 @@ export default function BlogPost() {
               to={`/${language}/blog`}
               className="inline-flex items-center text-text-secondary hover:text-text-primary text-sm transition-colors"
             >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Blog'a Dön
             </Link>
@@ -394,7 +412,7 @@ export default function BlogPost() {
             <span className="text-sm text-text-secondary">{post.readTime}</span>
             <span className="text-sm text-text-secondary">•</span>
             <span className="text-sm text-text-secondary">
-              {new Date(post.date).toLocaleDateString('tr-TR')}
+              {new Date(post.date).toLocaleDateString("tr-TR")}
             </span>
           </div>
 
@@ -411,7 +429,9 @@ export default function BlogPost() {
               className="w-12 h-12 rounded-full object-cover"
             />
             <div>
-              <div className="font-semibold text-text-primary">{post.author.name}</div>
+              <div className="font-semibold text-text-primary">
+                {post.author.name}
+              </div>
               <div className="text-sm text-text-secondary">
                 {post.author.bio[language as keyof typeof post.author.bio]}
               </div>
@@ -443,30 +463,39 @@ export default function BlogPost() {
               }}
             >
               {post.content[language as keyof typeof post.content]
-                .split('\n')
+                .split("\n")
                 .map((paragraph, index) => {
-                  if (paragraph.startsWith('# ')) {
+                  if (paragraph.startsWith("# ")) {
                     return (
-                      <h1 key={index} className="text-3xl font-bold text-text-primary mt-8 mb-6 first:mt-0">
+                      <h1
+                        key={index}
+                        className="text-3xl font-bold text-text-primary mt-8 mb-6 first:mt-0"
+                      >
                         {paragraph.slice(2)}
                       </h1>
                     );
                   }
-                  if (paragraph.startsWith('## ')) {
+                  if (paragraph.startsWith("## ")) {
                     return (
-                      <h2 key={index} className="text-2xl font-bold text-text-primary mt-8 mb-4">
+                      <h2
+                        key={index}
+                        className="text-2xl font-bold text-text-primary mt-8 mb-4"
+                      >
                         {paragraph.slice(3)}
                       </h2>
                     );
                   }
-                  if (paragraph.startsWith('### ')) {
+                  if (paragraph.startsWith("### ")) {
                     return (
-                      <h3 key={index} className="text-xl font-semibold text-text-primary mt-6 mb-3">
+                      <h3
+                        key={index}
+                        className="text-xl font-semibold text-text-primary mt-6 mb-3"
+                      >
                         {paragraph.slice(4)}
                       </h3>
                     );
                   }
-                  if (paragraph.startsWith('- ')) {
+                  if (paragraph.startsWith("- ")) {
                     return (
                       <li key={index} className="ml-6 mb-2">
                         {paragraph.slice(2)}
@@ -476,18 +505,21 @@ export default function BlogPost() {
                   if (paragraph.match(/^\d+\. /)) {
                     return (
                       <li key={index} className="ml-6 mb-2 list-decimal">
-                        {paragraph.replace(/^\d+\. /, '')}
+                        {paragraph.replace(/^\d+\. /, "")}
                       </li>
                     );
                   }
-                  if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+                  if (paragraph.startsWith("**") && paragraph.endsWith("**")) {
                     return (
-                      <p key={index} className="font-bold text-text-primary mb-4">
+                      <p
+                        key={index}
+                        className="font-bold text-text-primary mb-4"
+                      >
                         {paragraph.slice(2, -2)}
                       </p>
                     );
                   }
-                  if (paragraph.trim() === '') {
+                  if (paragraph.trim() === "") {
                     return <br key={index} />;
                   }
                   return (

@@ -60,7 +60,8 @@ export const de = {
       readMore: "Weiterlesen",
       backToBlog: "Zurück zum Blog",
       postNotFound: "Beitrag nicht gefunden",
-      postNotFoundDesc: "Der gesuchte Blog-Beitrag konnte nicht gefunden werden.",
+      postNotFoundDesc:
+        "Der gesuchte Blog-Beitrag konnte nicht gefunden werden.",
       categories: {
         technology: "Technologie",
         irrigation: "Bewässerung",
@@ -94,7 +95,8 @@ export const de = {
   blog: {
     cta: {
       title: "Verbessern Sie Ihre Gewächshaustechnologie mit SeraGPT",
-      subtitle: "Steigern Sie Ihre Effizienz mit unseren KI-gestützten Gewächshauslösungen.",
+      subtitle:
+        "Steigern Sie Ihre Effizienz mit unseren KI-gestützten Gewächshauslösungen.",
       consultingButton: "Kostenlose Beratung erhalten",
       blogButton: "Andere Artikel",
     },
