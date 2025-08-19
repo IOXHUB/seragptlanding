@@ -220,7 +220,7 @@ export default function Index() {
                   border: index % 4 === 0 ? "none" : "1px solid #E5E7EB",
                   cursor: "pointer",
                   transition: "all 0.3s ease",
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
+                  opacity: 1,
                 }}
                 className="hover:scale-105 hover:shadow-md"
                 onMouseEnter={(e) => {
@@ -666,7 +666,7 @@ export default function Index() {
               {
                 question: "SeraGPT nasıl çalışır?",
                 answer:
-                  "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
+                  "SeraGPT, yapay zeka algoritmalar�� kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
               },
               {
                 question: "Hangi sensörlerle uyumlu?",
