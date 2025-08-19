@@ -6,7 +6,7 @@ import {
   ReactNode,
 } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { getTranslation } from '../locales';
+import { getTranslation } from "../locales";
 
 export type Language = "tr" | "en" | "de" | "ru";
 
@@ -32,7 +32,7 @@ interface LanguageContextType {
 
 // Create a default context value
 const defaultContext: LanguageContextType = {
-  language: 'tr',
+  language: "tr",
   setLanguage: () => {},
   languages: LANGUAGES,
   t: (key: string) => key,
@@ -65,7 +65,12 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
       setTimeout(() => {
         if (location.pathname === "/") {
           navigate("/tr", { replace: true });
-        } else if (!location.pathname.startsWith("/tr") && !location.pathname.startsWith("/en") && !location.pathname.startsWith("/de") && !location.pathname.startsWith("/ru")) {
+        } else if (
+          !location.pathname.startsWith("/tr") &&
+          !location.pathname.startsWith("/en") &&
+          !location.pathname.startsWith("/de") &&
+          !location.pathname.startsWith("/ru")
+        ) {
           const newPath = `/tr${location.pathname}`;
           navigate(newPath, { replace: true });
         }

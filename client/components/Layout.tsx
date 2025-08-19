@@ -28,7 +28,10 @@ export function Layout({ children }: LayoutProps) {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           <div className="flex justify-between items-center h-14 sm:h-16">
             {/* Logo */}
-            <Link to={`/${language}`} className="flex items-center flex-shrink-0">
+            <Link
+              to={`/${language}`}
+              className="flex items-center flex-shrink-0"
+            >
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                 alt="SeraGPT"
@@ -76,7 +79,10 @@ export function Layout({ children }: LayoutProps) {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
             {/* Logo and Description */}
             <div className="flex flex-col items-center md:items-start">
-              <Link to={`/${language}`} className="flex items-center mb-2 sm:mb-3">
+              <Link
+                to={`/${language}`}
+                className="flex items-center mb-2 sm:mb-3"
+              >
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                   alt="SeraGPT"

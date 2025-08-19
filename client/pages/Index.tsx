@@ -66,7 +66,8 @@ export default function Index() {
                         %65-70 arasına düşürmenizi öneririm.
                       </span>
                       <span className="sm:hidden">
-                        Optimum seviyede! Havalandırmayı artırın, nem %65-70 olmalı.
+                        Optimum seviyede! Havalandırmayı artırın, nem %65-70
+                        olmalı.
                       </span>
                     </div>
                     <div className="bg-background rounded-lg p-2 sm:p-3 text-xs sm:text-sm text-text-secondary">
