@@ -54,6 +54,18 @@ export const en = {
       title: "Blog",
       description:
         "Current articles and guides about greenhouse technologies, agricultural productivity and artificial intelligence.",
+      featuredLabel: "Featured",
+      latestPosts: "Latest Posts",
+      readMore: "Read More",
+      backToBlog: "Back to Blog",
+      postNotFound: "Post Not Found",
+      postNotFoundDesc: "The blog post you are looking for could not be found.",
+      categories: {
+        technology: "Technology",
+        irrigation: "Irrigation",
+        future: "Future",
+        organic: "Organic",
+      },
     },
     support: {
       title: "Support",
