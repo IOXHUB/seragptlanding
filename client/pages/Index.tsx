@@ -187,10 +187,10 @@ export default function Index() {
             </div>
 
             {/* Feature 4 */}
-            <div className="group bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:-translate-y-1">
-              <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
+            <div className="group bg-background border border-border rounded-lg sm:rounded-xl p-4 sm:p-6 hover:shadow-lg transition-all duration-200 sm:hover:-translate-y-1">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:bg-orange-200 transition-colors">
                 <svg
-                  className="w-6 h-6 text-orange-600"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -203,7 +203,7 @@ export default function Index() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-text-primary mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-text-primary mb-2 sm:mb-3">
                 Mobil Uygulamamız
               </h3>
               <p className="text-text-secondary leading-relaxed text-sm">
