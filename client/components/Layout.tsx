@@ -124,8 +124,8 @@ export function Layout({ children }: LayoutProps) {
           </div>
 
           {/* Copyright */}
-          <div className="mt-8 pt-6 border-t border-border text-center">
-            <p className="text-text-secondary text-sm">
+          <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-border text-center">
+            <p className="text-text-secondary text-xs sm:text-sm">
               {t("footer.copyright")}
             </p>
           </div>
