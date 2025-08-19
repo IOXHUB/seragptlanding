@@ -256,19 +256,6 @@ export default function Index() {
           </div>
         </div>
 
-        {/* CSS Animation */}
-        <style jsx>{`
-          @keyframes fadeInUp {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-        `}</style>
       </section>
 
       {/* Hizmetlerimiz Section */}
@@ -666,7 +653,7 @@ export default function Index() {
               {
                 question: "SeraGPT nasıl çalışır?",
                 answer:
-                  "SeraGPT, yapay zeka algoritmalar�� kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
+                  "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
               },
               {
                 question: "Hangi sensörlerle uyumlu?",
