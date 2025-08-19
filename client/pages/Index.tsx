@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "../hooks/useTranslation";
 import { useLanguage } from "../contexts/LanguageContext";
+import { PricingSection } from "../components/sections/PricingSection";
 
 export default function Index() {
   const { t } = useTranslation();
