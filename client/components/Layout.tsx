@@ -27,35 +27,36 @@ export function Layout({ children }: LayoutProps) {
       <header className="border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <Link to="/" className="flex items-center">
+            {/* Logo - Minimal monochrome */}
+            <Link to={`/${language}`} className="flex items-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
                 alt="SeraGPT"
-                className="h-8 w-auto"
+                className="h-7 w-auto filter grayscale hover:grayscale-0 transition-all duration-200"
               />
             </Link>
 
-            {/* Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-link-hover ${
-                    location.pathname === item.href
-                      ? "text-text-primary border-b-2 border-text-primary pb-4"
-                      : "text-text-secondary"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
-
-            {/* Language Switcher and Mobile menu */}
-            <div className="flex items-center gap-4">
+            {/* Right side: Language Switcher + Auth Buttons */}
+            <div className="flex items-center gap-3">
               <LanguageSwitcher />
+
+              {/* Giriş Button */}
+              <a
+                href="https://chat.seragpt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors"
+              >
+                Giriş
+              </a>
+
+              {/* Hemen Başla Button - Accent */}
+              <Link
+                to={`/${language}/proje-danismanligi`}
+                className="inline-flex items-center px-4 py-2 bg-button-bg text-button-foreground text-sm font-medium rounded-md hover:bg-button-bg-hover transition-colors"
+              >
+                Hemen Başla
+              </Link>
 
               {/* Mobile menu button */}
               <div className="md:hidden">
