@@ -1,8 +1,12 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { useTranslation } from "../hooks/useTranslation";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const NotFound = () => {
   const location = useLocation();
+  const { t } = useTranslation();
+  const { language } = useLanguage();
 
   useEffect(() => {
     console.error(
@@ -12,13 +16,21 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="section-padding">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="text-6xl mb-8">404</div>
+        <h1 className="text-4xl font-bold text-text-primary mb-6">
+          {t('pages.notFound.title')}
+        </h1>
+        <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+          {t('pages.notFound.description')}
+        </p>
+        <Link
+          to={`/${language}`}
+          className="inline-flex items-center justify-center px-8 py-3 bg-button-bg text-button-foreground text-base font-medium rounded-lg hover:bg-button-bg-hover transition-colors"
+        >
+          {t('pages.notFound.backHome')}
+        </Link>
       </div>
     </div>
   );
