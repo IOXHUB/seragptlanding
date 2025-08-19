@@ -89,4 +89,14 @@ export const de = {
       backHome: "Zurück zur Startseite",
     },
   },
+
+  // Blog
+  blog: {
+    cta: {
+      title: "Verbessern Sie Ihre Gewächshaustechnologie mit SeraGPT",
+      subtitle: "Steigern Sie Ihre Effizienz mit unseren KI-gestützten Gewächshauslösungen.",
+      consultingButton: "Kostenlose Beratung erhalten",
+      blogButton: "Andere Artikel",
+    },
+  },
 };
