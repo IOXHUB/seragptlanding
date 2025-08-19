@@ -82,22 +82,20 @@ export default function Index() {
       <section style={{ paddingTop: '80px', paddingBottom: '80px' }} className="py-12 sm:py-20">
         <div style={{ maxWidth: '600px', margin: '0 auto', padding: '0 16px' }}>
           <div className="grid grid-cols-1 gap-10" style={{ gap: '40px' }}>
-            {/* Left Column - 60% */}
-            <div className="lg:col-span-3">
-              <h2 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '12px' }} className="text-2xl sm:text-3xl font-bold mb-4">
+            {/* Content */}
+            <div>
+              <h2 style={{ fontSize: '32px', fontWeight: '700', marginBottom: '12px', textAlign: 'center' }} className="text-2xl sm:text-3xl font-bold mb-4">
                 Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği
               </h2>
-              <p style={{ fontSize: '16px', color: '#374151' }} className="text-gray-700">
+              <p style={{ fontSize: '16px', color: '#374151', marginBottom: '24px', textAlign: 'center' }} className="text-gray-700">
                 Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım planlaması ve gecikmiş aksiyonlardan kaynaklanır. SeraGPT; 20+ teknik analiz, global veri servisleri ve tarımsal yapay zekâ destekli kurumsal raporlar sunar.
               </p>
-            </div>
-            
-            {/* Right Column - 40% */}
-            <div className="lg:col-span-2">
+
+              {/* KPI Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   "5–10 yıl iklim senaryosu",
-                  "ROI & CAPEX/OPEX modelleme", 
+                  "ROI & CAPEX/OPEX modelleme",
                   "Enerji & su optimizasyonu",
                   "Pazar & fiyat öngörüleri"
                 ].map((text, index) => (
