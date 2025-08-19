@@ -287,6 +287,7 @@ export default function Index() {
                 padding: "24px",
                 backgroundColor: "#FFFFFF",
                 height: "100%",
+                textAlign: "center",
               }}
             >
               <h3
@@ -315,6 +316,8 @@ export default function Index() {
                   marginBottom: "16px",
                   listStyle: "none",
                   padding: 0,
+                  textAlign: "left",
+                  display: "inline-block",
                 }}
               >
                 <li style={{ marginBottom: "4px" }}>
@@ -354,6 +357,7 @@ export default function Index() {
                 padding: "24px",
                 backgroundColor: "#FFFFFF",
                 height: "100%",
+                textAlign: "center",
               }}
             >
               <p
@@ -381,6 +385,8 @@ export default function Index() {
                   marginBottom: "16px",
                   listStyle: "none",
                   padding: 0,
+                  textAlign: "left",
+                  display: "inline-block",
                 }}
               >
                 <li style={{ marginBottom: "4px" }}>
@@ -412,9 +418,253 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Canlı Deneyim – Sohbet Akışı Section */}
+      {/* Pricing Section */}
+      <section
+        style={{ paddingTop: "80px", paddingBottom: "80px", backgroundColor: "#F9FAFB" }}
+        className="py-12 sm:py-20"
+      >
+        <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ textAlign: "center", marginBottom: "48px" }}>
+            <h2
+              style={{
+                fontSize: "32px",
+                fontWeight: "700",
+                marginBottom: "8px",
+              }}
+              className="text-2xl sm:text-3xl font-bold mb-3"
+            >
+              Abonelik Planları
+            </h2>
+            <p style={{ fontSize: "14px", color: "#6B7280" }}>
+              İhtiyacınıza uygun planı seçin ve hemen başlayın
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6" style={{ gap: "24px" }}>
+            {/* Basic Plan */}
+            <div
+              style={{
+                border: "1px solid #E5E7EB",
+                borderRadius: "16px",
+                padding: "24px",
+                backgroundColor: "#FFFFFF",
+                textAlign: "center",
+              }}
+            >
+              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+                Başlangıç
+              </h3>
+              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+                Küçük sera işletmeleri için
+              </p>
+              <div style={{ marginBottom: "16px" }}>
+                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺99</span>
+                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
+              </div>
+              <a
+                href="https://chat.seragpt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  backgroundColor: "#146448",
+                  color: "#FFFFFF",
+                  padding: "12px 20px",
+                  borderRadius: "9999px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+              >
+                Hemen Başla
+              </a>
+            </div>
+
+            {/* Professional Plan */}
+            <div
+              style={{
+                border: "2px solid #146448",
+                borderRadius: "16px",
+                padding: "24px",
+                backgroundColor: "#FFFFFF",
+                textAlign: "center",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "-12px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  backgroundColor: "#146448",
+                  color: "#FFFFFF",
+                  padding: "4px 12px",
+                  borderRadius: "9999px",
+                  fontSize: "12px",
+                  fontWeight: "600",
+                }}
+              >
+                En Popüler
+              </div>
+              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+                Profesyonel
+              </h3>
+              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+                Orta ölçekli sera işletmeleri için
+              </p>
+              <div style={{ marginBottom: "16px" }}>
+                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺299</span>
+                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
+              </div>
+              <a
+                href="https://chat.seragpt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  backgroundColor: "#146448",
+                  color: "#FFFFFF",
+                  padding: "12px 20px",
+                  borderRadius: "9999px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+              >
+                Hemen Başla
+              </a>
+            </div>
+
+            {/* Enterprise Plan */}
+            <div
+              style={{
+                border: "1px solid #E5E7EB",
+                borderRadius: "16px",
+                padding: "24px",
+                backgroundColor: "#FFFFFF",
+                textAlign: "center",
+              }}
+            >
+              <h3 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "8px" }}>
+                Kurumsal
+              </h3>
+              <p style={{ color: "#6B7280", fontSize: "14px", marginBottom: "16px" }}>
+                Büyük sera kompleksleri için
+              </p>
+              <div style={{ marginBottom: "16px" }}>
+                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺999</span>
+                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
+              </div>
+              <Link
+                to="/iletisim"
+                style={{
+                  border: "1px solid #E5E7EB",
+                  borderRadius: "9999px",
+                  padding: "12px 20px",
+                  backgroundColor: "transparent",
+                  color: "#111827",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  display: "inline-block",
+                }}
+              >
+                İletişime Geç
+              </Link>
+            </div>
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: "24px" }}>
+            <p style={{ color: "#6B7280", fontSize: "12px" }}>
+              Tüm planlar 14 günlük ücretsiz deneme ile başlar
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
       <section
         style={{ paddingTop: "80px", paddingBottom: "80px" }}
+        className="py-12 sm:py-20"
+      >
+        <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
+          <div style={{ textAlign: "center", marginBottom: "48px" }}>
+            <h2
+              style={{
+                fontSize: "32px",
+                fontWeight: "700",
+                marginBottom: "8px",
+              }}
+              className="text-2xl sm:text-3xl font-bold mb-3"
+            >
+              Sık Sorulan Sorular
+            </h2>
+            <p style={{ fontSize: "14px", color: "#6B7280" }}>
+              SeraGPT ile ilgili merak ettiklerinizi burada bulabilirsiniz
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                question: "SeraGPT nasıl çalışır?",
+                answer: "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar."
+              },
+              {
+                question: "Hangi sensörlerle uyumlu?",
+                answer: "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz."
+              },
+              {
+                question: "Kurulum süreci ne kadar sürer?",
+                answer: "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir."
+              },
+              {
+                question: "Ücretsiz deneme süresi var mı?",
+                answer: "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz."
+              }
+            ].map((faq, index) => (
+              <div
+                key={index}
+                style={{
+                  border: "1px solid #E5E7EB",
+                  borderRadius: "16px",
+                  padding: "20px",
+                  backgroundColor: "#FFFFFF",
+                }}
+              >
+                <h3 style={{ fontWeight: "700", marginBottom: "8px", fontSize: "16px" }}>
+                  {faq.question}
+                </h3>
+                <p style={{ color: "#374151", fontSize: "14px", lineHeight: "1.5" }}>
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: "center", marginTop: "32px" }}>
+            <p style={{ color: "#6B7280", marginBottom: "16px" }}>
+              Aradığınız soruyu bulamadınız mı?
+            </p>
+            <a
+              href="mailto:destek@seragpt.com"
+              style={{
+                backgroundColor: "#146448",
+                color: "#FFFFFF",
+                padding: "12px 20px",
+                borderRadius: "9999px",
+                fontWeight: "600",
+                textDecoration: "none",
+                display: "inline-block",
+              }}
+            >
+              Bize Ulaşın
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section
+        style={{ paddingTop: "80px", paddingBottom: "80px", backgroundColor: "#F9FAFB" }}
         className="py-12 sm:py-20"
       >
         <div
@@ -427,80 +677,22 @@ export default function Index() {
         >
           <h2
             style={{
-              fontSize: "18px",
+              fontSize: "32px",
               fontWeight: "700",
-              marginBottom: "12px",
+              marginBottom: "16px",
             }}
           >
-            Canlı Deneyim – Sohbet Akışı
+            Sera Verimliliğinizi Artırmaya Hazır mısınız?
           </h2>
-
-          {/* Phone Mockup */}
-          <div
+          <p
             style={{
-              border: "1px solid #E5E7EB",
-              borderRadius: "28px",
-              padding: "24px",
-              backgroundColor: "#FFFFFF",
-              textAlign: "left",
-              maxWidth: "420px",
-              margin: "0 auto 16px",
+              fontSize: "16px",
+              color: "#6B7280",
+              marginBottom: "32px",
             }}
           >
-            <div
-              style={{
-                backgroundColor: "#F3F4F6",
-                padding: "10px 14px",
-                borderRadius: "14px",
-                marginBottom: "8px",
-                display: "inline-block",
-              }}
-            >
-              Kullanıcı: Domates serası ROI analizi?
-            </div>
-            <div
-              style={{
-                backgroundColor: "#111827",
-                color: "#FFFFFF",
-                padding: "10px 14px",
-                borderRadius: "14px",
-                marginBottom: "8px",
-                display: "inline-block",
-                marginLeft: "auto",
-                float: "right",
-                clear: "both",
-              }}
-            >
-              AI: Baz senaryoda 4.2 yıl; enerji optimizasyonuyla 3.5 yıla iner.
-            </div>
-            <div style={{ clear: "both" }}></div>
-            <div
-              style={{
-                backgroundColor: "#F3F4F6",
-                padding: "10px 14px",
-                borderRadius: "14px",
-                marginBottom: "8px",
-                display: "inline-block",
-              }}
-            >
-              Kullanıcı: Hangi teşvikler uygun?
-            </div>
-            <div
-              style={{
-                backgroundColor: "#111827",
-                color: "#FFFFFF",
-                padding: "10px 14px",
-                borderRadius: "14px",
-                display: "inline-block",
-                marginLeft: "auto",
-                float: "right",
-              }}
-            >
-              AI: 2025 modernizasyon hibesi uygun. Şartları göstereyim mi?
-            </div>
-            <div style={{ clear: "both" }}></div>
-          </div>
-
+            Ücretsiz analiz ile başlayın, farkı hemen görün.
+          </p>
           <div
             style={{
               display: "flex",
@@ -516,7 +708,7 @@ export default function Index() {
               style={{
                 backgroundColor: "#146448",
                 color: "#FFFFFF",
-                padding: "12px 20px",
+                padding: "14px 22px",
                 borderRadius: "9999px",
                 fontWeight: "600",
                 textDecoration: "none",
@@ -531,7 +723,7 @@ export default function Index() {
                 backgroundColor: "transparent",
                 border: "1px solid #E5E7EB",
                 color: "#111827",
-                padding: "12px 20px",
+                padding: "14px 22px",
                 borderRadius: "9999px",
                 fontWeight: "600",
                 textDecoration: "none",
