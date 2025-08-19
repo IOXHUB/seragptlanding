@@ -84,9 +84,11 @@ export function Layout({ children }: LayoutProps) {
             {/* Company info */}
             <div className="md:col-span-1">
               <Link to="/" className="flex items-center mb-4">
-                <span className="text-xl font-bold text-text-primary">
-                  SeraGPT
-                </span>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2c7ec7c93776440b923d3518963fc941%2Fd41e899f98924d69be74ed16912b5a38?format=webp&width=800"
+                  alt="SeraGPT"
+                  className="h-6 w-auto"
+                />
               </Link>
               <p className="text-text-secondary text-sm leading-relaxed">
                 Yapay zeka destekli sera teknolojileri ve danışmanlık hizmetleri
