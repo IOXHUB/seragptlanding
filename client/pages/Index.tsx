@@ -365,6 +365,11 @@ export default function Index() {
                 backgroundColor: "#FFFFFF",
                 height: "100%",
                 textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                margin: "0 auto",
               }}
             >
               <p
