@@ -345,7 +345,7 @@ export default function Index() {
 
       {/* Footer */}
       <footer style={{ marginTop: '64px', borderTop: '1px solid #E5E7EB', backgroundColor: '#FFFFFF' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 16px', flexWrap: 'wrap', gap: '12px' }} className="flex-col sm:flex-row">
+        <div style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 16px', flexWrap: 'wrap', gap: '12px' }} className="flex-col sm:flex-row">
           <div style={{ fontWeight: '700' }}>SeraGPT © 2025</div>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }} className="text-sm">
             <Link to="/hakkimizda" style={{ color: '#374151', textDecoration: 'none' }}>Hakkımızda</Link>
