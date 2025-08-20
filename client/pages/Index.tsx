@@ -23,6 +23,8 @@ export default function Index() {
         fontFamily: "Inter, system-ui, -apple-system",
         color: "#0A0A0A",
         backgroundColor: "#FFFFFF",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       {/* Hero Section */}
@@ -43,7 +45,7 @@ export default function Index() {
               fontSize: "42px",
               lineHeight: "1.1",
               fontWeight: "700",
-              marginBottom: "16px",
+              marginBottom: "30px",
               "@media (min-width: 768px)": { fontSize: "48px" },
               "@media (min-width: 1024px)": { fontSize: "56px" },
             }}
@@ -55,7 +57,7 @@ export default function Index() {
             style={{
               fontSize: "18px",
               color: "#6B7280",
-              marginBottom: "24px",
+              marginBottom: "50px",
               "@media (min-width: 1024px)": { fontSize: "20px" },
             }}
             className="text-lg sm:text-xl text-gray-500 mb-6"
@@ -120,20 +122,6 @@ export default function Index() {
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
           <div style={{ textAlign: "center" }}>
-            {/* Upper Slogan */}
-            <p
-              style={{
-                fontSize: "14px",
-                color: "#146448",
-                fontWeight: "600",
-                marginBottom: "16px",
-                textTransform: "uppercase",
-                letterSpacing: "0.5px",
-              }}
-            >
-              {t("home.upperSlogan")}
-            </p>
-
             <h2
               style={{
                 fontSize: "32px",
@@ -161,9 +149,27 @@ export default function Index() {
 
       {/* Teknik Analiz Modülleri Section */}
       <section
-        style={{ paddingBottom: "80px" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          paddingTop: "20px",
+          paddingBottom: "50px"
+        }}
         className="py-12 sm:py-20"
       >
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#146448",
+            fontWeight: "600",
+            letterSpacing: "0.5px",
+            textTransform: "uppercase",
+            paddingBottom: "30px",
+            margin: "5px auto 0",
+          }}
+        >
+          {t("home.upperSlogan")}
+        </p>
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
           {/* Animated Tag Cloud */}
           <div
