@@ -548,7 +548,7 @@ export default function Index() {
                   marginBottom: "10px",
                 }}
               >
-                Pro
+                {t("home.planPro")}
               </h3>
               <div
                 style={{
