@@ -591,7 +591,7 @@ export default function Index() {
                   width: "100%",
                 }}
               >
-                Pro'ya Geç
+                {t("home.planProButton")}
               </a>
             </div>
 
