@@ -160,6 +160,22 @@ export const tr = {
       description: "Aradığınız sayfa bulunamadı.",
       backHome: "Ana Sayfaya Dön",
     },
+    about: {
+      title: "Hakkımızda",
+      description: "SeraGPT hakkında detaylı bilgi, misyon ve vizyonumuz.",
+    },
+    modules: {
+      title: "Analiz Modülleri",
+      description: "SeraGPT'nin sunduğu tüm teknik analiz modülleri ve özellikleri.",
+    },
+    examples: {
+      title: "Örnek Analizler",
+      description: "SeraGPT ile yapılan gerçek analiz örnekleri ve sonuçları.",
+    },
+    contact: {
+      title: "İletişim",
+      description: "Bizimle iletişime geçin, sorularınızı yanıtlayalım.",
+    },
   },
 
   // Blog
