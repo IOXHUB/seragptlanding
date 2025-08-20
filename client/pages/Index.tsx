@@ -508,10 +508,9 @@ export default function Index() {
                   padding: 0,
                 }}
               >
-                <li style={{ marginBottom: "8px" }}>• 5 Analiz</li>
-                <li style={{ marginBottom: "8px" }}>• 100 Mesaj</li>
-                <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
-                <li style={{ marginBottom: "8px" }}>• Ücretsiz Deneme</li>
+                {t("home.planFreeFeatures").map((feature, index) => (
+                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                ))}
               </ul>
               <a
                 href="https://chat.seragpt.com/auth/signup?next=/free"
