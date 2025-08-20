@@ -302,7 +302,7 @@ export default function Index() {
                   marginBottom: "10px",
                 }}
               >
-                Proje ve Zirai Danışmanlık
+                {t("home.consultingTitle")}
               </h3>
               <p
                 style={{
@@ -311,8 +311,7 @@ export default function Index() {
                   marginBottom: "12px",
                 }}
               >
-                Uzman ekibimizle teknik danışmanlık, fizibilite, hibe/teşvik ve
-                mevzuat süreçleri.
+                {t("home.consultingDescription")}
               </p>
               <ul
                 style={{
