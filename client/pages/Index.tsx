@@ -132,7 +132,7 @@ export default function Index() {
               }}
               className="text-2xl sm:text-3xl font-bold mb-4"
             >
-              Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği
+              {t("home.criticalTitle")}
             </h2>
             <p
               style={{
