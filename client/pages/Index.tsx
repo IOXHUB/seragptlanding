@@ -76,7 +76,7 @@ export default function Index() {
               }}
               className="hover:bg-blue-700"
             >
-              Ücretsiz Analiz Başlat
+              {t("home.heroButton")}
             </a>
             <Link
               to="/ornek-analizler"
