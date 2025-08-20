@@ -571,9 +571,6 @@ export default function Index() {
                 {(t("home.planProFeatures") || []).map((feature, index) => (
                   <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
                 ))}
-                <li style={{ marginBottom: "8px" }}>
-                  ��� Yıllık ödemede 2 ay ücretsiz
-                </li>
               </ul>
               <a
                 href="https://chat.seragpt.com/billing/checkout?plan=pro"
