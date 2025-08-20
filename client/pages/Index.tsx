@@ -488,7 +488,7 @@ export default function Index() {
                   marginBottom: "10px",
                 }}
               >
-                Ücretsiz
+                {t("home.planFree")}
               </h3>
               <div
                 style={{
