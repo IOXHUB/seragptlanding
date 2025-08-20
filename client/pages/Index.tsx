@@ -93,7 +93,7 @@ export default function Index() {
               }}
               className="hover:bg-gray-50"
             >
-              Örnek Analizleri İncele
+              {t("home.heroSecondaryButton")}
             </Link>
           </div>
           <p style={{ fontSize: "12px", color: "#6B7280", marginTop: "12px" }}>
