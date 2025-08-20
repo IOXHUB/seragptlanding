@@ -115,7 +115,7 @@ export default function Index() {
 
       {/* Neden Bu Kadar Kritik Section */}
       <section
-        style={{ paddingTop: "80px", paddingBottom: "80px" }}
+        style={{ paddingTop: "80px", paddingBottom: "40px" }}
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
