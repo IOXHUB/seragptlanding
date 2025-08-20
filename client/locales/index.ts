@@ -11,7 +11,7 @@ export const translations = {
   ru,
 };
 
-export function getTranslation(language: Language, key: string): string {
+export function getTranslation(language: Language, key: string): any {
   const keys = key.split(".");
   let value: any = translations[language];
 
@@ -31,7 +31,7 @@ export function getTranslation(language: Language, key: string): string {
     }
   }
 
-  return typeof value === "string" ? value : key;
+  return value !== undefined ? value : key;
 }
 
 export type TranslationKey = keyof typeof tr;
