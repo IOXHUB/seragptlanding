@@ -557,7 +557,7 @@ export default function Index() {
                   marginBottom: "20px",
                 }}
               >
-                ₺4.900 / ay
+                {t("home.planProPeriod")}
               </div>
               <ul
                 style={{
