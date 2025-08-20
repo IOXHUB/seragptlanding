@@ -11,30 +11,36 @@ export const de = {
   // Homepage
   home: {
     heroTitle: "Entdecken Sie Landwirtschaftliche Intelligenz",
-    heroSubtitle: "Professionelle Analysen, Beratung und schlüsselfertige Gewächshauslösungen an einem Ort.",
+    heroSubtitle:
+      "Professionelle Analysen, Beratung und schlüsselfertige Gewächshauslösungen an einem Ort.",
     heroButton: "Kostenlose Analyse starten",
     heroSecondaryButton: "Beispielanalysen ansehen",
     heroNote: "Begrenzte Analyse- und Nachrichtenrechte mit kostenlosem Plan.",
 
     // Critical Problem Section
-    upperSlogan: "20+ professionelle Analysen für datengestützte Entscheidungen",
-    criticalTitle: "Das kritischste Problem im Gewächshaus: Mangel an datengestützten Entscheidungen",
-    criticalDescription: "40% der Ertragsverluste entstehen durch unzureichende Analysen, falsche Investitionsplanung und verzögerte Maßnahmen. SeraGPT bietet 20+ technische Analysen, globale Datendienste und landwirtschaftliche KI-gestützte Unternehmensberichte.",
+    upperSlogan:
+      "20+ professionelle Analysen für datengestützte Entscheidungen",
+    criticalTitle:
+      "Das kritischste Problem im Gewächshaus: Mangel an datengestützten Entscheidungen",
+    criticalDescription:
+      "40% der Ertragsverluste entstehen durch unzureichende Analysen, falsche Investitionsplanung und verzögerte Maßnahmen. SeraGPT bietet 20+ technische Analysen, globale Datendienste und landwirtschaftliche KI-gestützte Unternehmensberichte.",
 
     // Analysis Modules
     modulesTitle: "SeraGPTs technische Analyse-Module",
-    modulesSubtitle: "20+ professionelle Analysen für datengestützte Entscheidungen",
+    modulesSubtitle:
+      "20+ professionelle Analysen für datengestützte Entscheidungen",
     modulesButton: "Alle Module anzeigen",
 
     // Services
     consultingTitle: "Projekt- und Landwirtschaftsberatung",
-    consultingDescription: "Technische Beratung, Machbarkeit, Zuschuss-/Anreiz- und regulatorische Prozesse mit unserem Expertenteam.",
+    consultingDescription:
+      "Technische Beratung, Machbarkeit, Zuschuss-/Anreiz- und regulatorische Prozesse mit unserem Expertenteam.",
     consultingFeatures: [
       "Pflanzenphysiologie und Klimamanagement",
       "Machbarkeits- & Investitionsplanung",
       "Zuschuss-/Anreizanträge",
       "Regulatorische Compliance",
-      "Nachhaltigkeit/Qualität"
+      "Nachhaltigkeit/Qualität",
     ],
     consultingButton: "Beratung anfragen",
 
@@ -44,51 +50,75 @@ export const de = {
       "Konzeptdesign & Engineering",
       "CAPEX/OPEX-Optimierung",
       "Installation & Automatisierung",
-      "Überwachung und Schulung"
+      "Überwachung und Schulung",
     ],
     turnkeyButton: "Angebot anfordern",
 
     // Pricing
     pricingTitle: "Abonnement-Pläne",
-    pricingSubtitle: "Wählen Sie den Plan, der Ihren Bedürfnissen entspricht. Starten Sie kostenlos, wachsen Sie mit Pro oder Premium.",
+    pricingSubtitle:
+      "Wählen Sie den Plan, der Ihren Bedürfnissen entspricht. Starten Sie kostenlos, wachsen Sie mit Pro oder Premium.",
 
     planFree: "Kostenlos",
     planFreePeriod: "₺0 / 30 Tage",
-    planFreeFeatures: ["5 Analysen", "100 Nachrichten", "Gültig für 30 Tage", "Kostenlose Testversion"],
+    planFreeFeatures: [
+      "5 Analysen",
+      "100 Nachrichten",
+      "Gültig für 30 Tage",
+      "Kostenlose Testversion",
+    ],
     planFreeButton: "Kostenlos starten",
 
     planPro: "Pro",
     planProPeriod: "₺4.900 / Monat",
-    planProFeatures: ["500 Analysen", "100 technische Analysen", "1000 Nachrichten", "Gültig für 30 Tage", "2 Monate kostenlos bei jährlicher Zahlung"],
+    planProFeatures: [
+      "500 Analysen",
+      "100 technische Analysen",
+      "1000 Nachrichten",
+      "Gültig für 30 Tage",
+      "2 Monate kostenlos bei jährlicher Zahlung",
+    ],
     planProButton: "Auf Pro upgraden",
 
     planPremium: "Premium",
     planPremiumPeriod: "₺49.000 / Jahr",
-    planPremiumFeatures: ["5000 Analysen", "500 technische Analysen", "250 Premium-Analysen", "12.000 Nachrichten", "Gültig für 12 Monate"],
+    planPremiumFeatures: [
+      "5000 Analysen",
+      "500 technische Analysen",
+      "250 Premium-Analysen",
+      "12.000 Nachrichten",
+      "Gültig für 12 Monate",
+    ],
     planPremiumButton: "Auf Premium upgraden",
 
     // FAQ
     faqTitle: "Häufig gestellte Fragen",
     faqSubtitle: "Finden Sie hier Antworten auf Ihre Fragen zu SeraGPT",
     faqQuestion1: "Wie funktioniert SeraGPT?",
-    faqAnswer1: "SeraGPT analysiert Daten von Gewächshaussensoren mit KI-Algorithmen und bietet Empfehlungen für optimale Gewächshausbedingungen.",
+    faqAnswer1:
+      "SeraGPT analysiert Daten von Gewächshaussensoren mit KI-Algorithmen und bietet Empfehlungen für optimale Gewächshausbedingungen.",
     faqQuestion2: "Mit welchen Sensoren ist es kompatibel?",
-    faqAnswer2: "Funktioniert mit Temperatur-, Feuchtigkeits-, pH-, EC-, CO2-, Lichtsensoren. Wir können Integration mit Ihren bestehenden Gewächshaus-Automatisierungssystemen bereitstellen.",
+    faqAnswer2:
+      "Funktioniert mit Temperatur-, Feuchtigkeits-, pH-, EC-, CO2-, Lichtsensoren. Wir können Integration mit Ihren bestehenden Gewächshaus-Automatisierungssystemen bereitstellen.",
     faqQuestion3: "Wie lange dauert der Installationsprozess?",
-    faqAnswer3: "Standardinstallation wird innerhalb von 1-3 Tagen abgeschlossen. Kann je nach Gewächshausgröße und vorhandener Infrastruktur variieren.",
+    faqAnswer3:
+      "Standardinstallation wird innerhalb von 1-3 Tagen abgeschlossen. Kann je nach Gewächshausgröße und vorhandener Infrastruktur variieren.",
     faqQuestion4: "Gibt es eine kostenlose Testperiode?",
-    faqAnswer4: "Ja, wir haben eine 14-tägige kostenlose Testperiode. Sie können alle Funktionen während dieser Zeit testen.",
+    faqAnswer4:
+      "Ja, wir haben eine 14-tägige kostenlose Testperiode. Sie können alle Funktionen während dieser Zeit testen.",
     faqContactText: "Konnten Sie die gesuchte Frage nicht finden?",
     faqContactButton: "SUPPORT",
 
     // Final CTA
     ctaTitle: "Starten Sie Ihr Projekt heute",
-    ctaSubtitle: "Entdecken Sie Ihren landwirtschaftlichen Assistenten heute mit kostenlosen Analysen und landwirtschaftlicher Intelligenznutzung.",
+    ctaSubtitle:
+      "Entdecken Sie Ihren landwirtschaftlichen Assistenten heute mit kostenlosen Analysen und landwirtschaftlicher Intelligenznutzung.",
     ctaButton: "Kostenlose Analyse starten",
     ctaSecondaryButton: "Beispielanalysen ansehen",
 
     // Privacy Notice
-    privacyNotice: "Ihre Daten werden vertraulich behandelt. DSGVO-konforme Prozesse.",
+    privacyNotice:
+      "Ihre Daten werden vertraulich behandelt. DSGVO-konforme Prozesse.",
 
     featuresTitle: "Warum SeraGPT?",
     aiOptimization: "KI-Optimierung",

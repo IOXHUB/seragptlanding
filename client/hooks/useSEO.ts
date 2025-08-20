@@ -79,42 +79,52 @@ export function useSEO({
     // Update hreflang links dynamically
     const baseUrl = window.location.origin;
     const currentPath = window.location.pathname;
-    
+
     // Remove existing hreflang links
-    const existingHreflangs = document.querySelectorAll('link[hreflang]');
-    existingHreflangs.forEach(link => link.remove());
+    const existingHreflangs = document.querySelectorAll("link[hreflang]");
+    existingHreflangs.forEach((link) => link.remove());
 
     // Add new hreflang links
-    const languages = ['tr', 'en', 'de', 'ru'];
-    languages.forEach(lang => {
-      const hreflangLink = document.createElement('link');
-      hreflangLink.setAttribute('rel', 'alternate');
-      hreflangLink.setAttribute('hreflang', lang);
-      
+    const languages = ["tr", "en", "de", "ru"];
+    languages.forEach((lang) => {
+      const hreflangLink = document.createElement("link");
+      hreflangLink.setAttribute("rel", "alternate");
+      hreflangLink.setAttribute("hreflang", lang);
+
       // Construct proper URL based on current path
       let href = `${baseUrl}`;
-      if (lang !== 'tr') { // Turkish is default, no prefix needed
+      if (lang !== "tr") {
+        // Turkish is default, no prefix needed
         href += `/${lang}`;
       }
-      
+
       // Add path if not homepage
-      if (currentPath !== '/' && currentPath !== `/${lang}`) {
-        const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}\//, '/').replace(/^\/[a-z]{2}$/, '/');
-        if (pathWithoutLang !== '/') {
+      if (currentPath !== "/" && currentPath !== `/${lang}`) {
+        const pathWithoutLang = currentPath
+          .replace(/^\/[a-z]{2}\//, "/")
+          .replace(/^\/[a-z]{2}$/, "/");
+        if (pathWithoutLang !== "/") {
           href += pathWithoutLang;
         }
       }
-      
-      hreflangLink.setAttribute('href', href);
+
+      hreflangLink.setAttribute("href", href);
       document.head.appendChild(hreflangLink);
     });
 
     // Add x-default hreflang
-    const defaultHreflang = document.createElement('link');
-    defaultHreflang.setAttribute('rel', 'alternate');
-    defaultHreflang.setAttribute('hreflang', 'x-default');
-    defaultHreflang.setAttribute('href', baseUrl);
+    const defaultHreflang = document.createElement("link");
+    defaultHreflang.setAttribute("rel", "alternate");
+    defaultHreflang.setAttribute("hreflang", "x-default");
+    defaultHreflang.setAttribute("href", baseUrl);
     document.head.appendChild(defaultHreflang);
-
-  }, [title, description, ogTitle, ogDescription, ogImage, canonicalUrl, language]);
+  }, [
+    title,
+    description,
+    ogTitle,
+    ogDescription,
+    ogImage,
+    canonicalUrl,
+    language,
+  ]);
 }

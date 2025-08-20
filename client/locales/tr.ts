@@ -11,7 +11,8 @@ export const tr = {
   // Homepage
   home: {
     heroTitle: "Tarımsal Zekâyı Keşfedin",
-    heroSubtitle: "Profesyonel analizler, danışmanlık ve anahtar teslim sera çözümleri tek noktada.",
+    heroSubtitle:
+      "Profesyonel analizler, danışmanlık ve anahtar teslim sera çözümleri tek noktada.",
     heroButton: "Ücretsiz Analiz Başlat",
     heroSecondaryButton: "Örnek Analizleri İncele",
     heroNote: "Ücretsiz plan ile sınırlı analiz ve mesaj hakkı.",
@@ -19,7 +20,8 @@ export const tr = {
     // Critical Problem Section
     upperSlogan: "Veriye dayalı kararlar için 20+ profesyonel analiz",
     criticalTitle: "Seracılıkta En Kritik Sorun: Veriye Dayalı Karar Eksikliği",
-    criticalDescription: "Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım planlaması ve gecikmiş aksiyonlardan kaynaklanır. SeraGPT; 20+ teknik analiz, global veri servisleri ve tarımsal yapay zekâ destekli kurumsal raporlar sunar.",
+    criticalDescription:
+      "Verim kayıplarının %40'ı yetersiz analiz, yanlış yatırım planlaması ve gecikmiş aksiyonlardan kaynaklanır. SeraGPT; 20+ teknik analiz, global veri servisleri ve tarımsal yapay zekâ destekli kurumsal raporlar sunar.",
 
     // Analysis Modules
     modulesTitle: "SeraGPT'nin Teknik Analiz Modülleri",
@@ -28,13 +30,14 @@ export const tr = {
 
     // Services
     consultingTitle: "Proje ve Zirai Danışmanlık",
-    consultingDescription: "Uzman ekibimizle teknik danışmanlık, fizibilite, hibe/teşvik ve mevzuat süreçleri.",
+    consultingDescription:
+      "Uzman ekibimizle teknik danışmanlık, fizibilite, hibe/teşvik ve mevzuat süreçleri.",
     consultingFeatures: [
       "Bitki fizyolojisi ve iklim yönetimi",
       "Fizibilite & yatırım planlama",
       "Hibe/teşvik başvuruları",
       "Mevzuata uygunluk",
-      "Sürdürülebilirlik/kalite"
+      "Sürdürülebilirlik/kalite",
     ],
     consultingButton: "Danışmanlık Talep Et",
 
@@ -44,46 +47,69 @@ export const tr = {
       "Konsept tasarım & mühendislik",
       "CAPEX/OPEX optimizasyonu",
       "Kurulum & otomasyon",
-      "Süpervizörlük ve eğitim"
+      "Süpervizörlük ve eğitim",
     ],
     turnkeyButton: "Teklif İste",
 
     // Pricing
     pricingTitle: "Abonelik Planları",
-    pricingSubtitle: "İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya Premium ile büyütün.",
+    pricingSubtitle:
+      "İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya Premium ile büyütün.",
 
     planFree: "Ücretsiz",
     planFreePeriod: "₺0 / 30 gün",
-    planFreeFeatures: ["5 Analiz", "100 Mesaj", "30 Gün Geçerli", "Ücretsiz Deneme"],
+    planFreeFeatures: [
+      "5 Analiz",
+      "100 Mesaj",
+      "30 Gün Geçerli",
+      "Ücretsiz Deneme",
+    ],
     planFreeButton: "Ücretsiz Başlat",
 
     planPro: "Pro",
     planProPeriod: "₺4.900 / ay",
-    planProFeatures: ["500 Analiz", "100 Teknik Analiz", "1000 Mesaj", "30 Gün Geçerli", "Yıllık ödemede 2 ay ücretsiz"],
+    planProFeatures: [
+      "500 Analiz",
+      "100 Teknik Analiz",
+      "1000 Mesaj",
+      "30 Gün Geçerli",
+      "Yıllık ödemede 2 ay ücretsiz",
+    ],
     planProButton: "Pro'ya Geç",
 
     planPremium: "Premium",
     planPremiumPeriod: "₺49.000 / yıl",
-    planPremiumFeatures: ["5000 Analiz", "500 Teknik Analiz", "250 Premium Analiz", "12.000 Mesaj", "12 Ay Geçerli"],
+    planPremiumFeatures: [
+      "5000 Analiz",
+      "500 Teknik Analiz",
+      "250 Premium Analiz",
+      "12.000 Mesaj",
+      "12 Ay Geçerli",
+    ],
     planPremiumButton: "Premium'a Geç",
 
     // FAQ
     faqTitle: "Sık Sorulan Sorular",
     faqSubtitle: "SeraGPT ile ilgili merak ettiklerinizi burada bulabilirsiniz",
     faqQuestion1: "SeraGPT nasıl çalışır?",
-    faqAnswer1: "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
+    faqAnswer1:
+      "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
     faqQuestion2: "Hangi sensörlerle uyumlu?",
-    faqAnswer2: "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz.",
+    faqAnswer2:
+      "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz.",
     faqQuestion3: "Kurulum süreci ne kadar sürer?",
-    faqAnswer3: "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir.",
+    faqAnswer3:
+      "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir.",
     faqQuestion4: "Ücretsiz deneme süresi var mı?",
-    faqAnswer4: "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz.",
+    faqAnswer4:
+      "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz.",
     faqContactText: "Aradığınız soruyu bulamadınız mı?",
     faqContactButton: "DESTEK",
 
     // Final CTA
     ctaTitle: "Projenizi Bugün Başlatın",
-    ctaSubtitle: "Ücretsiz analiz ve tarımsal zeka kullanımı ile tarımsal asistanınızı bugün keşfedin.",
+    ctaSubtitle:
+      "Ücretsiz analiz ve tarımsal zeka kullanımı ile tarımsal asistanınızı bugün keşfedin.",
     ctaButton: "Ücretsiz Analiz Başlat",
     ctaSecondaryButton: "Örnek Analizleri İncele",
 
@@ -166,7 +192,8 @@ export const tr = {
     },
     modules: {
       title: "Analiz Modülleri",
-      description: "SeraGPT'nin sunduğu tüm teknik analiz modülleri ve özellikleri.",
+      description:
+        "SeraGPT'nin sunduğu tüm teknik analiz modülleri ve özellikleri.",
     },
     examples: {
       title: "Örnek Analizler",

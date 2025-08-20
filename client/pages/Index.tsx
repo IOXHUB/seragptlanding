@@ -13,7 +13,8 @@ export default function Index() {
     description: t("home.heroSubtitle"),
     ogTitle: t("home.heroTitle") + " | SeraGPT",
     ogDescription: t("home.heroSubtitle"),
-    canonicalUrl: window.location.origin + (language === 'tr' ? '/' : `/${language}`),
+    canonicalUrl:
+      window.location.origin + (language === "tr" ? "/" : `/${language}`),
   });
 
   return (
@@ -509,7 +510,9 @@ export default function Index() {
                 }}
               >
                 {(t("home.planFreeFeatures") || []).map((feature, index) => (
-                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                  <li key={index} style={{ marginBottom: "8px" }}>
+                    • {feature}
+                  </li>
                 ))}
               </ul>
               <a
@@ -569,7 +572,9 @@ export default function Index() {
                 }}
               >
                 {(t("home.planProFeatures") || []).map((feature, index) => (
-                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                  <li key={index} style={{ marginBottom: "8px" }}>
+                    • {feature}
+                  </li>
                 ))}
               </ul>
               <a
@@ -629,7 +634,9 @@ export default function Index() {
                 }}
               >
                 {(t("home.planPremiumFeatures") || []).map((feature, index) => (
-                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                  <li key={index} style={{ marginBottom: "8px" }}>
+                    • {feature}
+                  </li>
                 ))}
               </ul>
               <a
