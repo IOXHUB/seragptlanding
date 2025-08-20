@@ -264,7 +264,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-              Tüm Modülleri Gör
+              {t("home.modulesButton")}
             </Link>
           </div>
         </div>
