@@ -617,7 +617,7 @@ export default function Index() {
                   marginBottom: "20px",
                 }}
               >
-                ₺49.000 / yıl
+                {t("home.planPremiumPeriod")}
               </div>
               <ul
                 style={{
