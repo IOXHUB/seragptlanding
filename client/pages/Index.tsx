@@ -373,7 +373,7 @@ export default function Index() {
                   margin: "0 0 10px 1px",
                 }}
               >
-                Anahtar Teslim Sera
+                {t("home.turnkeyTitle")}
               </h3>
               <p
                 style={{
@@ -382,7 +382,7 @@ export default function Index() {
                   marginBottom: "12px",
                 }}
               >
-                <p>Çözüm ortaklarımız: ININSA, HBAGRO, HERMISAN, ISITMAX</p>
+                <p>{t("home.turnkeyPartners")}</p>
               </p>
               <ul
                 style={{
