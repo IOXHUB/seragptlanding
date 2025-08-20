@@ -398,14 +398,11 @@ export default function Index() {
                   alignItems: "center",
                 }}
               >
-                <li style={{ marginBottom: "4px" }}>
-                  • Konsept tasarım & mühendislik
-                </li>
-                <li style={{ marginBottom: "4px" }}>
-                  • CAPEX/OPEX optimizasyonu
-                </li>
-                <li style={{ marginBottom: "4px" }}>• Kurulum & otomasyon</li>
-                <li>• Süpervizörlük ve eğitim</li>
+                {t("home.turnkeyFeatures").map((feature, index) => (
+                  <li key={index} style={{ marginBottom: "4px" }}>
+                    • {feature}
+                  </li>
+                ))}
               </ul>
               <Link
                 to="/anahtar-teslim-sera"
