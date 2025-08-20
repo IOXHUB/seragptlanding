@@ -628,11 +628,9 @@ export default function Index() {
                   padding: 0,
                 }}
               >
-                <li style={{ marginBottom: "8px" }}>• 5000 Analiz</li>
-                <li style={{ marginBottom: "8px" }}>• 500 Teknik Analiz</li>
-                <li style={{ marginBottom: "8px" }}>• 250 Premium Analiz</li>
-                <li style={{ marginBottom: "8px" }}>• 12.000 Mesaj</li>
-                <li style={{ marginBottom: "8px" }}>• 12 Ay Geçerli</li>
+                {(t("home.planPremiumFeatures") || []).map((feature, index) => (
+                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                ))}
               </ul>
               <a
                 href="https://chat.seragpt.com/billing/checkout?plan=premium"
