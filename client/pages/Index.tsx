@@ -497,7 +497,7 @@ export default function Index() {
                   marginBottom: "20px",
                 }}
               >
-                ₺0 / 30 gün
+                {t("home.planFreePeriod")}
               </div>
               <ul
                 style={{
