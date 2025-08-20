@@ -441,36 +441,42 @@ export default function Index() {
       {/* Pricing Section */}
       <section
         style={{
-          paddingTop: "80px",
-          paddingBottom: "80px",
-          backgroundColor: "#F9FAFB",
+          paddingTop: "60px",
+          paddingBottom: "60px",
+          backgroundColor: "#FFFFFF",
         }}
         className="py-12 sm:py-20"
       >
-        <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ textAlign: "center", marginBottom: "48px" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px" }}>
+          <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <h2
               style={{
                 fontSize: "32px",
                 fontWeight: "700",
-                marginBottom: "8px",
+                marginBottom: "10px",
               }}
               className="text-2xl sm:text-3xl font-bold mb-3"
             >
               Abonelik Planları
             </h2>
-            <p style={{ fontSize: "14px", color: "#6B7280" }}>
-              İhtiyacınıza uygun planı seçin ve hemen başlayın
+            <p style={{ fontSize: "16px", color: "#555", marginBottom: "40px" }}>
+              İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya Premium ile büyütün.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6" style={{ gap: "24px" }}>
-            {/* Basic Plan */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "20px"
+            }}
+          >
+            {/* Ücretsiz Plan */}
             <div
               style={{
-                border: "1px solid #E5E7EB",
-                borderRadius: "16px",
-                padding: "24px",
+                border: "1px solid #e5e7eb",
+                borderRadius: "12px",
+                padding: "30px",
                 backgroundColor: "#FFFFFF",
                 textAlign: "center",
               }}
@@ -479,117 +485,109 @@ export default function Index() {
                 style={{
                   fontSize: "20px",
                   fontWeight: "700",
-                  marginBottom: "8px",
+                  marginBottom: "10px",
                 }}
               >
-                Başlangıç
+                Ücretsiz
               </h3>
-              <p
+              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+                ₺0 / 30 gün
+              </div>
+              <ul
                 style={{
-                  color: "#6B7280",
-                  fontSize: "14px",
-                  marginBottom: "16px",
+                  textAlign: "left",
+                  marginBottom: "20px",
+                  color: "#444",
+                  listStyle: "none",
+                  padding: 0,
                 }}
               >
-                Küçük sera işletmeleri için
-              </p>
-              <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontSize: "32px", fontWeight: "700" }}>₺99</span>
-                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
-              </div>
+                <li style={{ marginBottom: "8px" }}>• 5 Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 100 Mesaj</li>
+                <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
+                <li style={{ marginBottom: "8px" }}>• Ücretsiz Deneme</li>
+              </ul>
               <a
-                href="https://chat.seragpt.com"
+                href="https://chat.seragpt.com/auth/signup?next=/free"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  backgroundColor: "#146448",
-                  color: "#FFFFFF",
+                  backgroundColor: "#111",
+                  color: "#fff",
                   padding: "12px 20px",
-                  borderRadius: "9999px",
+                  borderRadius: "8px",
                   fontWeight: "600",
                   textDecoration: "none",
                   display: "inline-block",
+                  width: "100%",
                 }}
               >
-                Hemen Başla
+                Ücretsiz Başlat
               </a>
             </div>
 
-            {/* Professional Plan */}
+            {/* Pro Plan */}
             <div
               style={{
-                border: "2px solid #146448",
-                borderRadius: "16px",
-                padding: "24px",
-                backgroundColor: "#FFFFFF",
+                border: "2px solid #111",
+                borderRadius: "12px",
+                padding: "30px",
+                backgroundColor: "#f9fafb",
                 textAlign: "center",
-                position: "relative",
               }}
             >
-              <div
-                style={{
-                  position: "absolute",
-                  top: "-12px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  backgroundColor: "#146448",
-                  color: "#FFFFFF",
-                  padding: "4px 12px",
-                  borderRadius: "9999px",
-                  fontSize: "12px",
-                  fontWeight: "600",
-                }}
-              >
-                En Popüler
-              </div>
               <h3
                 style={{
                   fontSize: "20px",
                   fontWeight: "700",
-                  marginBottom: "8px",
+                  marginBottom: "10px",
                 }}
               >
-                Profesyonel
+                Pro
               </h3>
-              <p
+              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+                ₺4.900 / ay
+              </div>
+              <ul
                 style={{
-                  color: "#6B7280",
-                  fontSize: "14px",
-                  marginBottom: "16px",
+                  textAlign: "left",
+                  marginBottom: "20px",
+                  color: "#444",
+                  listStyle: "none",
+                  padding: 0,
                 }}
               >
-                Orta ölçekli sera işletmeleri için
-              </p>
-              <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontSize: "32px", fontWeight: "700" }}>
-                  ₺299
-                </span>
-                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
-              </div>
+                <li style={{ marginBottom: "8px" }}>• 500 Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 100 Teknik Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 1000 Mesaj</li>
+                <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
+                <li style={{ marginBottom: "8px" }}>• Yıllık ödemede 2 ay ücretsiz</li>
+              </ul>
               <a
-                href="https://chat.seragpt.com"
+                href="https://chat.seragpt.com/billing/checkout?plan=pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  backgroundColor: "#146448",
-                  color: "#FFFFFF",
+                  backgroundColor: "#111",
+                  color: "#fff",
                   padding: "12px 20px",
-                  borderRadius: "9999px",
+                  borderRadius: "8px",
                   fontWeight: "600",
                   textDecoration: "none",
                   display: "inline-block",
+                  width: "100%",
                 }}
               >
-                Hemen Başla
+                Pro'ya Geç
               </a>
             </div>
 
-            {/* Enterprise Plan */}
+            {/* Premium Plan */}
             <div
               style={{
-                border: "1px solid #E5E7EB",
-                borderRadius: "16px",
-                padding: "24px",
+                border: "1px solid #e5e7eb",
+                borderRadius: "12px",
+                padding: "30px",
                 backgroundColor: "#FFFFFF",
                 textAlign: "center",
               }}
@@ -598,48 +596,47 @@ export default function Index() {
                 style={{
                   fontSize: "20px",
                   fontWeight: "700",
-                  marginBottom: "8px",
+                  marginBottom: "10px",
                 }}
               >
-                Kurumsal
+                Premium
               </h3>
-              <p
+              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+                ₺49.000 / yıl
+              </div>
+              <ul
                 style={{
-                  color: "#6B7280",
-                  fontSize: "14px",
-                  marginBottom: "16px",
+                  textAlign: "left",
+                  marginBottom: "20px",
+                  color: "#444",
+                  listStyle: "none",
+                  padding: 0,
                 }}
               >
-                Büyük sera kompleksleri için
-              </p>
-              <div style={{ marginBottom: "16px" }}>
-                <span style={{ fontSize: "32px", fontWeight: "700" }}>
-                  ₺999
-                </span>
-                <span style={{ color: "#6B7280", marginLeft: "4px" }}>/ay</span>
-              </div>
-              <Link
-                to="/iletisim"
+                <li style={{ marginBottom: "8px" }}>• 5000 Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 500 Teknik Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 250 Premium Analiz</li>
+                <li style={{ marginBottom: "8px" }}>• 12.000 Mesaj</li>
+                <li style={{ marginBottom: "8px" }}>• 12 Ay Geçerli</li>
+              </ul>
+              <a
+                href="https://chat.seragpt.com/billing/checkout?plan=premium"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
-                  border: "1px solid #E5E7EB",
-                  borderRadius: "9999px",
+                  backgroundColor: "#111",
+                  color: "#fff",
                   padding: "12px 20px",
-                  backgroundColor: "transparent",
-                  color: "#111827",
+                  borderRadius: "8px",
                   fontWeight: "600",
                   textDecoration: "none",
                   display: "inline-block",
+                  width: "100%",
                 }}
               >
-                İletişime Geç
-              </Link>
+                Premium'a Geç
+              </a>
             </div>
-          </div>
-
-          <div style={{ textAlign: "center", marginTop: "24px" }}>
-            <p style={{ color: "#6B7280", fontSize: "12px" }}>
-              Tüm planlar 14 günlük ücretsiz deneme ile başlar
-            </p>
           </div>
         </div>
       </section>
