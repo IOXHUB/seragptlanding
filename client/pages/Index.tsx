@@ -327,17 +327,11 @@ export default function Index() {
                   alignItems: "center",
                 }}
               >
-                <li style={{ marginBottom: "4px" }}>
-                  • Bitki fizyolojisi ve iklim yönetimi
-                </li>
-                <li style={{ marginBottom: "4px" }}>
-                  • Fizibilite & yatırım planlama
-                </li>
-                <li style={{ marginBottom: "4px" }}>
-                  • Hibe/teşvik başvuruları
-                </li>
-                <li style={{ marginBottom: "4px" }}>• Mevzuata uygunluk</li>
-                <li>• Sürdürülebilirlik/kalite</li>
+                {t("home.consultingFeatures").map((feature, index) => (
+                  <li key={index} style={{ marginBottom: "4px" }}>
+                    • {feature}
+                  </li>
+                ))}
               </ul>
               <Link
                 to="/danismanlik"
