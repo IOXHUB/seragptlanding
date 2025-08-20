@@ -162,6 +162,22 @@ export const en = {
       description: "The page you are looking for could not be found.",
       backHome: "Back to Home",
     },
+    about: {
+      title: "About Us",
+      description: "Detailed information about SeraGPT, our mission and vision.",
+    },
+    modules: {
+      title: "Analysis Modules",
+      description: "All technical analysis modules and features offered by SeraGPT.",
+    },
+    examples: {
+      title: "Sample Analyses",
+      description: "Real analysis examples and results made with SeraGPT.",
+    },
+    contact: {
+      title: "Contact",
+      description: "Get in touch with us, let us answer your questions.",
+    },
   },
 
   // Blog
