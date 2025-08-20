@@ -669,10 +669,10 @@ export default function Index() {
               }}
               className="text-2xl sm:text-3xl font-bold mb-3"
             >
-              Sık Sorulan Sorular
+              {t("home.faqTitle")}
             </h2>
             <p style={{ fontSize: "14px", color: "#6B7280" }}>
-              SeraGPT ile ilgili merak ettiklerinizi burada bulabilirsiniz
+              {t("home.faqSubtitle")}
             </p>
           </div>
 
@@ -732,7 +732,7 @@ export default function Index() {
 
           <div style={{ textAlign: "center", marginTop: "32px" }}>
             <p style={{ color: "#6B7280", marginBottom: "16px" }}>
-              Aradığınız soruyu bulamadınız mı?
+              {t("home.faqContactText")}
             </p>
             <a
               href="mailto:destek@seragpt.com"
@@ -746,7 +746,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-              <p>DESTEK</p>
+              {t("home.faqContactButton")}
             </a>
           </div>
         </div>
@@ -776,7 +776,7 @@ export default function Index() {
               marginBottom: "16px",
             }}
           >
-            <p>Projenizi Bugün Başlatın</p>
+            {t("home.ctaTitle")}
           </h2>
           <p
             style={{
@@ -843,7 +843,7 @@ export default function Index() {
           paddingBottom: "32px",
         }}
       >
-        Verileriniz gizli tutulur. KVKK/GDPR uyumlu süreçler.
+        {t("home.privacyNotice")}
       </div>
     </div>
   );
