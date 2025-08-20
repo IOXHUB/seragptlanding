@@ -38,7 +38,7 @@ export default function Index() {
             }}
             className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6"
           >
-            Tarımsal Zekâyı Keşfedin
+            {t("home.heroTitle")}
           </h1>
           <p
             style={{
@@ -49,8 +49,7 @@ export default function Index() {
             }}
             className="text-lg sm:text-xl text-gray-500 mb-6"
           >
-            Profesyonel analizler, danışmanlık ve anahtar teslim sera çözümleri
-            tek noktada.
+            {t("home.heroSubtitle")}
           </p>
           <div
             style={{
