@@ -7,6 +7,15 @@ export default function Index() {
   const { t } = useTranslation();
   const { language } = useLanguage();
 
+  // SEO Management
+  useSEO({
+    title: t("home.heroTitle") + " | SeraGPT",
+    description: t("home.heroSubtitle"),
+    ogTitle: t("home.heroTitle") + " | SeraGPT",
+    ogDescription: t("home.heroSubtitle"),
+    canonicalUrl: window.location.origin + (language === 'tr' ? '/' : `/${language}`),
+  });
+
   return (
     <div
       style={{
