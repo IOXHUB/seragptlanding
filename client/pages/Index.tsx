@@ -337,7 +337,7 @@ export default function Index() {
                   alignItems: "center",
                 }}
               >
-                {t("home.consultingFeatures").map((feature, index) => (
+                {(t("home.consultingFeatures") || []).map((feature, index) => (
                   <li key={index} style={{ marginBottom: "4px" }}>
                     • {feature}
                   </li>
@@ -408,7 +408,7 @@ export default function Index() {
                   alignItems: "center",
                 }}
               >
-                {t("home.turnkeyFeatures").map((feature, index) => (
+                {(t("home.turnkeyFeatures") || []).map((feature, index) => (
                   <li key={index} style={{ marginBottom: "4px" }}>
                     • {feature}
                   </li>
@@ -508,7 +508,7 @@ export default function Index() {
                   padding: 0,
                 }}
               >
-                {t("home.planFreeFeatures").map((feature, index) => (
+                {(t("home.planFreeFeatures") || []).map((feature, index) => (
                   <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
                 ))}
               </ul>
