@@ -417,7 +417,7 @@ export default function Index() {
                   display: "inline-block",
                 }}
               >
-                Teklif İste
+                {t("home.turnkeyButton")}
               </Link>
             </div>
           </div>
