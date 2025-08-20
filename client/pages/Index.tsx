@@ -120,7 +120,7 @@ export default function Index() {
                 letterSpacing: "0.5px",
               }}
             >
-              Veriye dayalı kararlar için 20+ profesyonel analiz
+              {t("home.upperSlogan")}
             </p>
 
             <h2
