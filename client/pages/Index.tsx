@@ -163,10 +163,10 @@ export default function Index() {
               }}
               className="text-2xl sm:text-3xl font-bold mb-3"
             >
-              SeraGPT'nin Teknik Analiz Modülleri
+              {t("home.modulesTitle")}
             </h2>
             <p style={{ fontSize: "14px", color: "#6B7280" }}>
-              Veriye dayalı kararlar için 20+ profesyonel analiz
+              {t("home.modulesSubtitle")}
             </p>
           </div>
 
