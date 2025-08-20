@@ -25,27 +25,8 @@ export default function App() {
           <LanguageProvider>
             <Layout>
               <Routes>
-                {/* Root redirect to Turkish */}
+                {/* Root redirect to Turkish (default language) */}
                 <Route path="/" element={<Index />} />
-
-                {/* Language-prefixed routes */}
-                <Route path="/:lang" element={<Index />} />
-                <Route path="/:lang/blog" element={<Blog />} />
-                <Route path="/:lang/blog/:postId" element={<BlogPost />} />
-                <Route
-                  path="/:lang/destek"
-                  element={<PlaceholderPage pageKey="support" />}
-                />
-                <Route
-                  path="/:lang/proje-danismanligi"
-                  element={<PlaceholderPage pageKey="consulting" />}
-                />
-                <Route
-                  path="/:lang/anahtar-teslim-sera"
-                  element={<PlaceholderPage pageKey="turnkey" />}
-                />
-
-                {/* Legacy routes without language prefix - redirect */}
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:postId" element={<BlogPost />} />
                 <Route
@@ -59,6 +40,99 @@ export default function App() {
                 <Route
                   path="/anahtar-teslim-sera"
                   element={<PlaceholderPage pageKey="turnkey" />}
+                />
+                <Route
+                  path="/hakkimizda"
+                  element={<PlaceholderPage pageKey="about" />}
+                />
+                <Route
+                  path="/moduller"
+                  element={<PlaceholderPage pageKey="modules" />}
+                />
+                <Route
+                  path="/danismanlik"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/anahtar-teslim-sera"
+                  element={<PlaceholderPage pageKey="turnkey" />}
+                />
+                <Route
+                  path="/iletisim"
+                  element={<PlaceholderPage pageKey="contact" />}
+                />
+                <Route
+                  path="/ornek-analizler"
+                  element={<PlaceholderPage pageKey="examples" />}
+                />
+
+                {/* Language-prefixed routes */}
+                <Route path="/:lang" element={<Index />} />
+                <Route path="/:lang/blog" element={<Blog />} />
+                <Route path="/:lang/blog/:postId" element={<BlogPost />} />
+                <Route
+                  path="/:lang/destek"
+                  element={<PlaceholderPage pageKey="support" />}
+                />
+                <Route
+                  path="/:lang/support"
+                  element={<PlaceholderPage pageKey="support" />}
+                />
+                <Route
+                  path="/:lang/proje-danismanligi"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/:lang/project-consulting"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/:lang/anahtar-teslim-sera"
+                  element={<PlaceholderPage pageKey="turnkey" />}
+                />
+                <Route
+                  path="/:lang/turnkey-greenhouse"
+                  element={<PlaceholderPage pageKey="turnkey" />}
+                />
+                <Route
+                  path="/:lang/hakkimizda"
+                  element={<PlaceholderPage pageKey="about" />}
+                />
+                <Route
+                  path="/:lang/about"
+                  element={<PlaceholderPage pageKey="about" />}
+                />
+                <Route
+                  path="/:lang/moduller"
+                  element={<PlaceholderPage pageKey="modules" />}
+                />
+                <Route
+                  path="/:lang/modules"
+                  element={<PlaceholderPage pageKey="modules" />}
+                />
+                <Route
+                  path="/:lang/danismanlik"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/:lang/consulting"
+                  element={<PlaceholderPage pageKey="consulting" />}
+                />
+                <Route
+                  path="/:lang/iletisim"
+                  element={<PlaceholderPage pageKey="contact" />}
+                />
+                <Route
+                  path="/:lang/contact"
+                  element={<PlaceholderPage pageKey="contact" />}
+                />
+                <Route
+                  path="/:lang/ornek-analizler"
+                  element={<PlaceholderPage pageKey="examples" />}
+                />
+                <Route
+                  path="/:lang/examples"
+                  element={<PlaceholderPage pageKey="examples" />}
                 />
 
                 <Route path="*" element={<NotFound />} />
