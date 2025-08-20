@@ -805,7 +805,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-              Ücretsiz Analiz Başlat
+              {t("home.ctaButton")}
             </a>
             <Link
               to="/ornek-analizler"
@@ -820,7 +820,7 @@ export default function Index() {
                 display: "inline-block",
               }}
             >
-              Örnek Analizleri İncele
+              {t("home.ctaSecondaryButton")}
             </Link>
           </div>
         </div>
