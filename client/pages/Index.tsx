@@ -153,7 +153,7 @@ export default function Index() {
           display: "flex",
           flexDirection: "column",
           paddingTop: "20px",
-          paddingBottom: "50px"
+          paddingBottom: "50px",
         }}
         className="py-12 sm:py-20"
       >
