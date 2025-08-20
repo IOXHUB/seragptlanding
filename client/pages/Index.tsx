@@ -527,7 +527,7 @@ export default function Index() {
                   width: "100%",
                 }}
               >
-                Ücretsiz Başlat
+                {t("home.planFreeButton")}
               </a>
             </div>
 
@@ -573,7 +573,7 @@ export default function Index() {
                 <li style={{ marginBottom: "8px" }}>• 1000 Mesaj</li>
                 <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
                 <li style={{ marginBottom: "8px" }}>
-                  • Yıllık ödemede 2 ay ücretsiz
+                  ��� Yıllık ödemede 2 ay ücretsiz
                 </li>
               </ul>
               <a
