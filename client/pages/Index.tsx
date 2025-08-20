@@ -161,26 +161,10 @@ export default function Index() {
 
       {/* Teknik Analiz Modülleri Section */}
       <section
-        style={{ paddingTop: "80px", paddingBottom: "80px" }}
+        style={{ paddingBottom: "80px" }}
         className="py-12 sm:py-20"
       >
         <div style={{ maxWidth: "600px", margin: "0 auto", padding: "0 16px" }}>
-          <div style={{ textAlign: "center", marginBottom: "48px" }}>
-            <h2
-              style={{
-                fontSize: "32px",
-                fontWeight: "700",
-                marginBottom: "8px",
-              }}
-              className="text-2xl sm:text-3xl font-bold mb-3"
-            >
-              {t("home.modulesTitle")}
-            </h2>
-            <p style={{ fontSize: "14px", color: "#6B7280" }}>
-              {t("home.modulesSubtitle")}
-            </p>
-          </div>
-
           {/* Animated Tag Cloud */}
           <div
             style={{
