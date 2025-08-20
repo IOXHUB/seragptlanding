@@ -447,7 +447,9 @@ export default function Index() {
         }}
         className="py-12 sm:py-20"
       >
-        <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px" }}>
+        <div
+          style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px" }}
+        >
           <div style={{ textAlign: "center", marginBottom: "40px" }}>
             <h2
               style={{
@@ -459,8 +461,11 @@ export default function Index() {
             >
               Abonelik Planları
             </h2>
-            <p style={{ fontSize: "16px", color: "#555", marginBottom: "40px" }}>
-              İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya Premium ile büyütün.
+            <p
+              style={{ fontSize: "16px", color: "#555", marginBottom: "40px" }}
+            >
+              İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya
+              Premium ile büyütün.
             </p>
           </div>
 
@@ -468,7 +473,7 @@ export default function Index() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "20px"
+              gap: "20px",
             }}
           >
             {/* Ücretsiz Plan */}
@@ -490,7 +495,13 @@ export default function Index() {
               >
                 Ücretsiz
               </h3>
-              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+              <div
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
                 ₺0 / 30 gün
               </div>
               <ul
@@ -545,7 +556,13 @@ export default function Index() {
               >
                 Pro
               </h3>
-              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+              <div
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
                 ₺4.900 / ay
               </div>
               <ul
@@ -561,7 +578,9 @@ export default function Index() {
                 <li style={{ marginBottom: "8px" }}>• 100 Teknik Analiz</li>
                 <li style={{ marginBottom: "8px" }}>• 1000 Mesaj</li>
                 <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
-                <li style={{ marginBottom: "8px" }}>• Yıllık ödemede 2 ay ücretsiz</li>
+                <li style={{ marginBottom: "8px" }}>
+                  • Yıllık ödemede 2 ay ücretsiz
+                </li>
               </ul>
               <a
                 href="https://chat.seragpt.com/billing/checkout?plan=pro"
@@ -601,7 +620,13 @@ export default function Index() {
               >
                 Premium
               </h3>
-              <div style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
+              <div
+                style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
                 ₺49.000 / yıl
               </div>
               <ul
