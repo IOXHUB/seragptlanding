@@ -455,13 +455,12 @@ export default function Index() {
               }}
               className="text-2xl sm:text-3xl font-bold mb-3"
             >
-              Abonelik Planları
+              {t("home.pricingTitle")}
             </h2>
             <p
               style={{ fontSize: "16px", color: "#555", marginBottom: "40px" }}
             >
-              İhtiyacınıza uygun planı seçin. Ücretsiz başlayın, Pro veya
-              Premium ile büyütün.
+              {t("home.pricingSubtitle")}
             </p>
           </div>
 
