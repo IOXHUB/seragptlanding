@@ -568,7 +568,9 @@ export default function Index() {
                   padding: 0,
                 }}
               >
-                <li style={{ marginBottom: "8px" }}>• 500 Analiz</li>
+                {(t("home.planProFeatures") || []).map((feature, index) => (
+                  <li key={index} style={{ marginBottom: "8px" }}>• {feature}</li>
+                ))}
                 <li style={{ marginBottom: "8px" }}>• 100 Teknik Analiz</li>
                 <li style={{ marginBottom: "8px" }}>• 1000 Mesaj</li>
                 <li style={{ marginBottom: "8px" }}>• 30 Gün Geçerli</li>
