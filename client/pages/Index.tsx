@@ -97,7 +97,7 @@ export default function Index() {
             </Link>
           </div>
           <p style={{ fontSize: "12px", color: "#6B7280", marginTop: "12px" }}>
-            Ücretsiz plan ile sınırlı analiz ve mesaj hakk��.
+            {t("home.heroNote")}
           </p>
         </div>
       </section>
