@@ -781,10 +781,7 @@ export default function Index() {
               marginBottom: "32px",
             }}
           >
-            <p>
-              Ücretsiz analiz ve tarımsal zeka kullanımı ile tarımsal
-              asistanınızı bugün keşfedin.{" "}
-            </p>
+            {t("home.ctaSubtitle")}
           </p>
           <div
             style={{
