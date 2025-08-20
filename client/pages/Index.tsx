@@ -346,7 +346,7 @@ export default function Index() {
                   display: "inline-block",
                 }}
               >
-                Danışmanl��k Talep Et
+                {t("home.consultingButton")}
               </Link>
             </div>
 
