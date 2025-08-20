@@ -679,24 +679,20 @@ export default function Index() {
           <div className="space-y-4">
             {[
               {
-                question: "SeraGPT nasıl çalışır?",
-                answer:
-                  "SeraGPT, yapay zeka algoritmaları kullanarak sera sensörlerinden gelen verileri analiz eder ve optimal sera koşulları için öneriler sunar.",
+                question: t("home.faqQuestion1"),
+                answer: t("home.faqAnswer1"),
               },
               {
-                question: "Hangi sensörlerle uyumlu?",
-                answer:
-                  "Sıcaklık, nem, pH, EC, CO2, ışık sensörleri ile çalışır. Mevcut sera otomasyon sistemlerinizle entegrasyon sağlayabiliriz.",
+                question: t("home.faqQuestion2"),
+                answer: t("home.faqAnswer2"),
               },
               {
-                question: "Kurulum süreci ne kadar sürer?",
-                answer:
-                  "Standart kurulum 1-3 gün arasında tamamlanır. Sera büyüklüğü ve mevcut altyapıya bağlı olarak değişebilir.",
+                question: t("home.faqQuestion3"),
+                answer: t("home.faqAnswer3"),
               },
               {
-                question: "Ücretsiz deneme süresi var mı?",
-                answer:
-                  "Evet, 14 günlük ücretsiz deneme süremiz bulunur. Bu süre içinde tüm özellikleri test edebilirsiniz.",
+                question: t("home.faqQuestion4"),
+                answer: t("home.faqAnswer4"),
               },
             ].map((faq, index) => (
               <div
